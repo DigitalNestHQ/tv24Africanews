@@ -1,0 +1,15 @@
+export const pageurl = {
+    HOMEPAGE: "/",
+    SIGNUP: "/signup",
+    CONTACT: "/contact",
+    SIGNIN: "/login",
+    PRIVACYPOLICY: "/privacy-policy",
+    GOVERNANCE: "/governance",
+    BUSINESS: "/business",
+    COOKIEPOLICY: "/cookie-policy",
+    ENTERTAINMENT: "/entertainment",
+    LIFESTYLE: "/lifestyles",
+    FAQ: "/faq",
+    DISCOVER: "/discover",
+    ERROR404: "/error404",
+  };

@@ -1,0 +1,59 @@
+.error404-page {
+  font-family: "Averta-Regular";
+  color: #505962;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* THIS IS THE HEADER SECTION */
+
+.error404-page .heading-title {
+    padding: 4em 0 7em 0;
+  background: rgba(242, 235, 233, 0.6);;
+}
+
+.error404-heading {
+font-family: "Averta-Bold";
+font-size: 48px;
+line-height: 48px;
+text-align: center;
+color: #E7332B;
+text-transform: uppercase;
+}
+
+.error404-text {
+
+font-family: "Averta-Regular";
+font-size: 14px;
+line-height: 24px;
+color: #330B09;
+}
+
+.error404-btn {
+font-family: "Averta-Regular";
+background: #E7332B;
+font-size: 16px;
+line-height: 24px;
+padding: 10px;
+color: white;
+animation: shake 3s infinite;
+}
+
+.error404-btn:hover {
+    color: white;
+    opacity: 0.8;
+}
+
+@keyframes shake {
+0% {
+    transform: translateX(55px)
+}
+
+50% {
+    transform: translateX(5px)
+}
+
+100% {
+transform: translateY(0)
+}
+}
