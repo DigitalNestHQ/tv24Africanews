@@ -20,142 +20,62 @@
 } */
 
 
+.footer-wrapper{
+  background-color: #000;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.ft-crd{
+  border: none;
+  background-color: inherit;
+}
+.app-store{
+  background-color: #fff;
+  width: auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid green;
+}
+.app-store a img{
+  width: 120px;
+  margin: 5px;
+}
 
-.custom-btn{
-  background-color: #E7332B;
-  padding: 8px 20px!important;
-  /*text-align: center;*/
-  color: #ffff!important;
+footer a,
+footer i,
+footer .ps_p,
+footer p{
+  color: white;
+  text-transform: capitalize;
+}
+footer h3:not(.ps_p){
+  color: white;
+  text-transform: capitalize;
+  padding: 5px;
+  background-color: red;
   display: inline-block;
 }
-
-.footerContainer{
-    max-width: 1238px !important;
-}
-
-.mobile-footer h5{
-    font-size: 14px;
-}
-
-
-
-footer{
-  margin-top: 121px;
-  font-size: 14px;
-  line-height: 20px!important;
-}
+footer ul{
+  list-style-type: none;
+} 
 footer ul li a{
-    line-height: 20px!important;
-    font-size: 14px!important;
+  text-decoration: none;
 }
-
-footer h4,
-.footer-copyright {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
+footer ul li:hover{
+  border-top: .8px solid lightblue;
+  border-bottom: .8px solid lightblue;
+  padding: 3px 5px 0;
+  display: inline-block;
 }
-
-footer h4 {
-    margin-bottom: 24px;
+footer ul li a:hover{
+  text-decoration: none;
+  color: wheat
 }
-footer li a{
-  color: #514949!important;
+footer small{
+  color: #fff;
+  font-size: 20px;
+  text-align: center
 }
-
-.footer-link {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  color: #514949!important;
-}
-
-footer .nav-link:hover {
-  text-decoration: underline;
-}
-
-footer li{
-  padding: 0!important
-}
-
-.facebook-link span{
-    color: #3b5998;
-    font-size: 20px;
-}
-
-.twitter-link span{
-    color: #00acee;
-    font-size: 20px;
-}
-
-.bg{
-  background-image: url("../../../assets/images/Contact-form/bg.png");
-  background-size: cover;
-  padding-top: 10em; 
-  padding-bottom: 10em;
-
-}
-
-.enroll h3{
-  font-size: 1.75rem!important;
-}
-
-
-
-
-
-@media only screen and (max-width: 576px) {
-  .bg{
-    padding: 2em 1em;
-  }
-
-  .bg h3{
-    font-size: 14px
-  }
-  .mobile-footer h5{
-    font-size: 14px
-  }
-  .enroll-child{
-    padding-left:15px!important; 
-    padding-right:15px!important; 
-  }
-  .enroll h3{
-    font-size: 0.9rem!important;
-  }
-}
-
-
-
-@media only screen and (max-width: 768px) and (min-width: 577px){
-  
-
-  .custom-btn{
-    background-color: #E7332B;
-    padding: 8px 10px!important;
-    /*text-align: center;*/
-    color: #ffff!important;
-    /*font-size: 10px;*/
-    display: inline-block;
-  }
-
-  .custom-btn1{
-    padding: 5px 30px!important;
-  }
-
-  footer{
-    font-size: 10px;
-  }
-
-  .logo img{
-    width: 50%
-  }
-}
-
-
-
-@media only screen and (max-width: 1024px) and (min-width: 769px) {
-  .custom-textarea{
-    height: 125px!important;
-  }
-}
-
-

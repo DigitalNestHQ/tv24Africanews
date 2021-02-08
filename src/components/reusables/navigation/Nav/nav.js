@@ -1,22 +1,25 @@
 import React from "react";
-import logo from "../../../../assets/images/logo.png";
+import logo from "../../../../assets/images/TV24Ergb.png";
 import { pageurl } from "../../../../utils/constants";
 import { NavLink } from "react-router-dom";
 import { Button } from "reactstrap";
-import TopNav from '../../topnav';
+import TopNav from "../../topnav";
 import "./nav.css";
 import "../../header.css";
 
 const Navbar = () => {
   return (
     <div className="Navigation">
-	<TopNav/>
+      <TopNav />
       <header>
-        <div className="container" >
+        <div className="container-fluid">
           <nav className="navbar navbar-expand-lg navbar-light navigation py-3 px-1">
-            <a className="navbar-brand" href={pageurl.HOMEPAGE} style={{"color": "#fff"}}>
-              {/* <img src={logo} alt="logo" /> */}
-			  LOGO
+            <a
+              className="navbar-brand logo"
+              href={pageurl.HOMEPAGE}
+              style={{ color: "#fff" }}
+            >
+              <img src={logo} alt="logo" />
             </a>
             <button
               className="navbar-toggler d-lg-none"
@@ -95,11 +98,10 @@ const Navbar = () => {
                   >
                     SIGNIN
                   </a>
-                  
                 </li>
-				<li className="nav-item hd-bd">
+                <li className="nav-item hd-bd">
                   {/* <NavLink */}
-				  <Button color="danger">SUBSCRIBE</Button>{" "}
+                  <Button color="danger">SUBSCRIBE</Button>{" "}
                   <i className="fas fa-search"></i>
                   {/* </NavLink> */}
                 </li>

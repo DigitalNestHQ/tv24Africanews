@@ -2,6 +2,9 @@
     box-sizing: border-box;
     padding: 0;
     margin:0;
+    position:fixed;
+    width: 100%;
+    z-index: 10;
   }
 
   .activeLink {
@@ -21,7 +24,9 @@
    background: #e7332b;
    border-radius: 0;
  }
-
+ .logo img{
+    width: 60px;
+}
  /* @media screen and (min-width:1000px){
     .Navigation header .h-btn{
      margin-left:100px;
@@ -91,7 +96,6 @@
 .Navigation .custom-btn {
     background-color: #E7332B;
     padding: 8px 20px !important;
-    /*text-align: center;*/
     color: #ffff !important;
     display: inline-block;
 
@@ -112,4 +116,20 @@ width: 90%;
 }
 .hd-bd{
     border-right: none;
+}
+
+/* logo animation */
+@media (prefers-reduced-motion: no-preference) {
+  .logo{
+    animation: App-logo-spin infinite 10s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

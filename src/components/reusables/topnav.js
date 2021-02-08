@@ -11,15 +11,31 @@ function topNav(props) {
   };
   return (
     <div className="top-nav">
-      <p className='text-white' style={{"marginBottom": "0px"}}>
+      <p className="text-white" style={{ marginBottom: "0px" }}>
         {" "}
         <span>Welcome Adeola Konga</span> <span>{getDate()}</span>{" "}
       </p>
-      <ul className="soc-nav" style={{"marginBottom": "0px"}}>
-      <li><a href="/"><i className="fab fa-facebook"></i></a></li>
-      <li><a href="/"><i className="fab fa-twitter"></i></a></li>
-      <li><a href="/"><i className="fab fa-instagram"></i></a></li>
-      <li><a href="/"><i className="fab fa-youtube"></i></a></li>
+      <ul className="soc-nav" style={{ marginBottom: "0px" }}>
+        <li>
+          <a href="/">
+            <i className="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <i className="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <i className="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <i className="fab fa-youtube"></i>
+          </a>
+        </li>
       </ul>
     </div>
   );

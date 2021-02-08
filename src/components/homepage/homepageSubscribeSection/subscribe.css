@@ -1,0 +1,15 @@
+.sb-cntrl{
+    background-color: pink;
+    padding: 10px auto;
+}
+.sb-cntrl:hover{
+    cursor: alias;
+}
+.sub-btn{
+    background-color: #000;
+    border: 1px solid #000
+}
+.sub-logo img{
+    width: 100px;
+    height: 100px;
+}
