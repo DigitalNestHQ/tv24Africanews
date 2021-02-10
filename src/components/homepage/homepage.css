@@ -1,85 +1,104 @@
-.cnt-1{
-    background: url("../../assets/images/endsars.jpg");;
-    background-color: rgba(190, 200, 223, 0.4);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.8;
+.cnt-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../../assets/images/endsars.jpg")top/cover fixed no-repeat;
     color: #fff;
 }
-.cnt-2{
-    background-image: url("../../assets/images/Mambilla-Plateau.jpg");
-    background-color: rgba(190, 200, 223, 0.4);
+
+.cnt-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../../assets/images/Mambilla-Plateau.jpg")top/cover fixed no-repeat;
     color: #fff;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.8;
 }
-.car-p{
+
+.car-p {
     font-size: 14px;
     line-height: 22px;
 }
-.cap-ancor{
+
+.cap-ancor {
     font-weight: 500;
     background-color: #fff;
     color: red;
     display: flex;
     width: 180px;
 }
-.cap-anco{
+
+.cap-anco {
     font-weight: 500;
     background-color: #fff;
     color: red;
-    margin-top: 30px!important
+    border: 1px solid black;
+    position: relative;
+    top: 30px;
 }
-.flex-container{
+
+.flex-container {
     padding-top: 180px;
 }
-.caro-capxn{
-    z-index: 4!important;
+
+.caro-capxn {
+    z-index: 4 !important;
 }
-@media screen and (min-width: 560px){
-    .flex-container{
+.cnt-txt-wrap{
+    position: relative;
+    top: 60px;
+}
+
+@media screen and (min-width: 560px) {
+    .flex-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 150px;
     }
-    .caro-item{
+
+    .caro-item {
         height: 450px;
     }
-    .cnt-2, .cnt-1{
+
+    .cnt-2,
+    .cnt-1 {
         height: 210px;
     }
+    
 }
-/* Tease section */
-.teaser{
+
+@media screen and (max-width: 560px){
+    .cnt-2,
+    .cnt-1,
+    .ct-rt {
+        height: 250px;
+    }
+}
+/*############## Tease section ###################*/
+.teaser {
     background-color: grey;
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
-.mt-wrap{
+
+.mt-wrap {
     height: 100%;
 }
 
-.butn{
+.butn {
     background: #fff;
     color: #F08080;
 }
-.butn:hover{
+
+.butn:hover {
     background: #F08080;
     color: #fff
 }
-@media screen and (min-width: 772px){
-    /* .m-t{
-        top: 100px;
-    } */
-}
-.h-100{
+.h-100 {
     transition: transform 2s ease;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
 }
-.h-100:hover{
+
+.h-100:hover {
     transform: scale(0.8);
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }

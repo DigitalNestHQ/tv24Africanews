@@ -9,8 +9,8 @@ import "./homepage.css";
 function banner() {
   return (
     <div className="container-fluid flex-container">
-      <div className="col-sm-8">
-        <Carousel className="mt-3">
+      <div className="col-sm-8 py-4 ">
+        <Carousel className="mt-3 ">
           <Carousel.Item className="caro-item">
             <img className="d-block w-100" src={image1} alt="First slide" />
             <Carousel.Caption className="caro-capxn">
@@ -60,31 +60,34 @@ function banner() {
           </Carousel.Item>
         </Carousel>
       </div>
-      <div className="col-sm-4">
-        <div className="cnt-1 mt-2 mb-2">
-          <a
-            href="/"
-            className="text-decoration-none inline-block p-2 text-left cap-anco mt-5"
-          >
-            End Sars Protest
-          </a>
-          <p className="pl-2 pt-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
-            provident?
-          </p>
-          {/* </div> */}
+      <div className="col-sm-4 py-4">
+        <div className="cnt-1 mb-2">
+          <div className="cnt-txt-wrap">
+            <a
+              href="/"
+              className="text-decoration-none inline-block p-2  cap-anco text-left mt-5"
+            >
+              End Sars Protest
+            </a>
+            <p className="pl-2 pt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+              provident?
+            </p>
+          </div>
         </div>
         <div className="cnt-2 mt-2">
-          <a
-            href="/"
-            className="text-decoration-none inline-block p-2 text-left cap-anco"
-          >
-            Mambilla Forest
-          </a>
-          <p className="pl-2 pt-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
-            provident?
-          </p>
+          <div className="cnt-txt-wrap">
+            <a
+              href="/"
+              className="text-decoration-none inline-block p-2 text-left cap-anco"
+            >
+              Mambilla Forest
+            </a>
+            <p className="pl-2 pt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+              provident?
+            </p>
+          </div>
         </div>
       </div>
     </div>

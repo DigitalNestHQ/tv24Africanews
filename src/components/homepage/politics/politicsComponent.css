@@ -1,0 +1,36 @@
+.politics-wrap h3{
+    font-size: 20px;
+    color: red;
+    text-decoration: underline;
+}
+.news-sec{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',Geneva, Verdana, sans-serif;
+
+}
+.news-sec a{
+    text-decoration: none;
+    transition: transform 2s ease;
+    height: 100%;
+    width: 100%;
+    color: #050505;
+}
+.news-sec a:hover{
+    transform: scale(0.9);
+    color: red;
+    opacity: 0.8;
+    transform: scale(0.8);
+    cursor: pointer;
+}
+.news-crd{
+    position: relative;
+}
+.news-crd label{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    z-index: 5;
+    background-color: red;
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+}

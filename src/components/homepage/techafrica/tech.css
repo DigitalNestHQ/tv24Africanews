@@ -1,0 +1,29 @@
+.tech{
+    margin-top: 40px;
+    margin-bottom: 40px
+}
+ h3{
+    color: red;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.tech_bg{
+    background-image: url("../../../assets/images/tech_1.jpg");
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tch-anchor{
+    text-decoration: none;
+    color: #020;
+}
+.tch-anchor:hover{
+    text-decoration: none;
+    color: #126;
+}
+
+@media screen and (max-width: 772px){
+    .tech{
+        margin: 30px auto;
+    }
+}

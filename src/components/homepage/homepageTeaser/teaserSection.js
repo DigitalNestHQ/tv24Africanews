@@ -7,9 +7,9 @@ import "../homepage.css"
 
 const teaserSection = () => {
   return (
-    <div className="teaser mt-3 mb-3 pt-3 pb-3">
-      <div className="row container-fluid">
-        <div className="col-sm-3 mt-2 mb-2">
+    <div className="teaser mt-3 mb-3 mx-auto">
+      <div className="row container-fluid mx-auto">
+        <div className="col-sm-3 my-2 ts-card">
           <Card className="bg-dark text-white mt-wrap h-100">
             <Card.Img src={Image1} alt="Card image" className="h-100"/>
             <Card.ImgOverlay className="m-t text-center">
