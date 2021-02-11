@@ -14,10 +14,10 @@ export class politicsComponent extends Component {
 
   render() {
     return (
-      <div className="politics-wrap container-fluid">
+      <div className="politics-wrap container-fluid my-4">
         <h3>POLITICS/GOVERNANCE</h3>
-        <div className="container-fluid mt-3 mb-3 p-2 d-flex row">
-          <div className="col-sm-3 news-sec">
+        <div className="container-fluid my-3 p-2 d-flex row mx-auto">
+          <div className="col-sm-3 news-sec my-2">
             <a href="/">
               <Card className="news-crd">
               <label>Premium</label>
@@ -31,7 +31,7 @@ export class politicsComponent extends Component {
               </Card>
             </a>
           </div>
-          <div className="col-sm-3 news-sec">
+          <div className="col-sm-3 news-sec my-2">
             <a href="/">
               <Card className="news-crd">
               <label className="color-red">Premium</label>
@@ -45,7 +45,7 @@ export class politicsComponent extends Component {
               </Card>
             </a>
           </div>
-          <div className="col-sm-3 news-sec">
+          <div className="col-sm-3 news-sec my-2">
             <a href="/">
               <Card className="news-crd">
               <label className="color-red">Premium</label>
@@ -59,7 +59,7 @@ export class politicsComponent extends Component {
               </Card>
             </a>
           </div>
-          <div className="col-sm-3 news-sec">
+          <div className="col-sm-3 news-sec my-2">
             <a href="/">
               <Card className="news-crd">
               <label className="color-red">Premium</label>
@@ -73,7 +73,7 @@ export class politicsComponent extends Component {
               </Card>
             </a>
           </div>
-          <div className="col-sm-3 mt-3 news-sec">
+          <div className="col-sm-3 mt-3 news-sec my-2">
             <a href="/">
               <Card>
                 <Card.Img variant="top" src={Kola} />
@@ -86,7 +86,7 @@ export class politicsComponent extends Component {
               </Card>
             </a>
           </div>
-          <div className="col-sm-3 mt-3 news-sec">
+          <div className="col-sm-3 mt-3 news-sec my-2">
             <a href="/">
               <Card>
                 <Card.Img variant="top" src={IVP} />
@@ -99,7 +99,7 @@ export class politicsComponent extends Component {
               </Card>
             </a>
           </div>
-          <div className="col-sm-3 mt-3 news-sec">
+          <div className="col-sm-3 mt-3 news-sec my-2">
             <a href="/">
               <Card>
                 <Card.Img variant="top" src={Dogara} />
@@ -112,7 +112,7 @@ export class politicsComponent extends Component {
               </Card>
             </a>
           </div>
-          <div className="col-sm-3 mt-3 news-sec">
+          <div className="col-sm-3 mt-3 news-sec my-2">
             <a href="/">
               <Card>
                 <Card.Img variant="top" src={Obaseki} />

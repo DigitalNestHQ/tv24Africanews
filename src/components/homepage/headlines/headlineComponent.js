@@ -7,10 +7,10 @@ export class headlineComponent extends Component {
   render() {
     return (
       <div className="hl-wrapper">
-        <div className="container-fluid">
-          <div className="row container-fluid">
+        <div className="container-fluid hl-tp-cont mx-auto">
+          <div className="row container-fluid mx-auto">
             <div className="col-sm-8 ns-txt-wrap">
-              <div className="container-fluid row mb-3 bt-red">
+              <div className="container-fluid row mb-3 bt-red mx-auto">
                 <div className="col-sm-6 ns-txt">
                   <span>PREMIUM</span>
                   <a href="/" className="text-bold news-hd">
@@ -62,8 +62,7 @@ export class headlineComponent extends Component {
                 </div>
               </div>
             </div>
-            {/* <div className="col-sm-1"></div> */}
-            <div className="col-sm-4 ns-art-wrap">
+            <div className="col-sm-4 ns-art-wrap mx-auto">
               <h2>MUST READ</h2>
               <article className="news_article">
                 <a href="/">

@@ -1,6 +1,34 @@
 .af-bg-red{
     background-color: red;
+    padding: 30px auto;
 }
 .da_img{
     height: 150px;
+}
+.africa h3{
+    padding-left: 30px;
+}
+.af-col-tp{
+    padding: 15px;
+    background-color: #fff;
+}
+.af-card-txt{
+    font-size: 50px;
+    font-weight: bold;
+}
+.af-card-overl{
+    top: 200px;
+}
+.af-crd{
+    background-color:#fff;
+    padding: 10px;
+}
+@media screen and (max-width: 560px){
+    .africa h3{
+        padding-left: 0;
+        text-align: center;
+    } 
+    .af-card-overl{
+        top: 20px;
+    }
 }

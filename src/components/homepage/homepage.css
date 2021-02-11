@@ -102,3 +102,17 @@
     background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
+.ts-card-txt{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px!important;
+    text-align: justify;
+}
+.ts-card-txt:hover{
+    filter: brightness(1.5);
+}
+.ts-card-wrap{
+    height: 300px
+}
+.ts-overlay{
+    padding-top: 120px;
+}

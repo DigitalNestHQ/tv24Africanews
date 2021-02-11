@@ -10,15 +10,15 @@ import "./discoverAfrica.css";
 export class discoverAfrica extends Component {
   render() {
     return (
-      <div className="africa ">
+      <div className="africa">
         <h3>DISCOVER AFRICA</h3>
         <div className="container-fluid row af-bg-red ml-0">
           <div className="col-sm-6 af-col-tp my-2 mx-auto">
-            <Card className="bg-dark text-white">
+            <Card className="text-white">
               <Card.Img src={Mambilla} alt="Card image" />
-              <Card.ImgOverlay>
+              <Card.ImgOverlay className="af-card-overl">
                 <Card.Text></Card.Text>
-                <Card.Text>MAMBILLA FOREST</Card.Text>
+                <Card.Text className="af-card-txt">MAMBILLA <br/> FOREST</Card.Text>
               </Card.ImgOverlay>
             </Card>
           </div>
@@ -46,7 +46,7 @@ export class discoverAfrica extends Component {
             <div className="row">
               <div className=" col-md-6 mx-auto my-2">
                 <a href="/">
-                  <Card>
+                  <Card className="af-crd">
                     <Card.Img variant="top" src={Calabar}  className="da_img"/>
                   </Card>
                   <span>PREMIUM</span>

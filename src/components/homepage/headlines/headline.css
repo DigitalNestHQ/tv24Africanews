@@ -1,3 +1,8 @@
+
+.hl-tp-cont{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 .hd-img{
     width: 400px;
     height: 200px;
@@ -44,6 +49,8 @@
     background: red;
     padding: 5px;
     text-align: center;
+    /* width: 100%; */
+    border-radius: 20px;
 }
 .ns-art-wrap article{
     padding: 7px auto;
@@ -72,9 +79,13 @@
     color: red;
     padding: 100px auto!important;
 }
+.news_article{
+    margin-bottom: 20px;
+}
 @media screen and (max-width: 560px){
     .hd-img{
         width: 310px!important;
+        margin: inherit auto;
     }
     .ns-txt{
         /* width: 100%!important */

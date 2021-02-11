@@ -1,7 +1,14 @@
 .politics-wrap h3{
-    font-size: 20px;
+    font-size: 24px;
     color: red;
     text-decoration: underline;
+    padding-left: 30px;
+    padding-top: 20px;
+    text-shadow: 5px 5px 8px #000;
+    letter-spacing: 4px;
+}
+.politics-wrap{
+    background-color: #777;
 }
 .news-sec{
     font-family: 'Lucida Sans', 'Lucida Sans Regular',Geneva, Verdana, sans-serif;
@@ -33,4 +40,9 @@
     color: #fff;
     display: inline-block;
     padding: 5px;
+}
+@media screen and (max-width: 772px){
+    .politics-wrap h3{
+        text-align: center;
+    }
 }
