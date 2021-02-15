@@ -19,22 +19,22 @@
    background:rgba(242, 235, 233, 0.6);
    transition: all 0.5s;
    width: 100%;
+   height: 102px;
  }
  .Navigation header .h-btn{
    background: #e7332b;
    border-radius: 0;
  }
+ .logo{
+     width: 78px;
+     height: 78px;
+ }
  .logo img{
-    width: 60px;
+    width: 100%;
+    height: 100%;
 }
- /* @media screen and (min-width:1000px){
-    .Navigation header .h-btn{
-     margin-left:100px;
-   }
- } */
-
  .Navigation .container {
-    max-width: 1238px !important;
+    max-width: 1440px !important;
     overflow: hidden !important;
 }
 
@@ -44,9 +44,6 @@
     color:#fff!important
 }
 
-.Navigation  .jj:hover {
-    color: #E7332B !important;
-}
 
 .Navigation  header .h-btn {
     background: #E7332B;
@@ -62,18 +59,14 @@
 .nav-link{
     color: #fff!important
 }
-.Navigation .container {
-    max-width: 1238px;
-    overflow: hidden;
-}
 .nav-item{
     border-right: 1px solid #fff;
     padding: 0;
 }
-
-.Navigation .heading-title{
-    padding: 4rem 0 7rem 0!important;
+.navbar-nav li:last-child{
+    border-right: none;
 }
+
 
 .Navigation header {
     transition: all 0.5s;
@@ -93,6 +86,14 @@
     }
 }
 
+@media screen and (min-width: 776px) {
+    .nav-item {
+        padding-right: 12px;
+    }
+    .nav-sub-i .nav-item{
+        padding-right: 0;
+    }
+}
 .Navigation .custom-btn {
     background-color: #E7332B;
     padding: 8px 20px !important;
@@ -100,11 +101,18 @@
     display: inline-block;
 
 }
-
-#enrolldiv {
-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+.nav-mn li{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: 'Roboto' sans-serif;
+}
+.nav-sub-i li{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    font-family: 'Roboto' sans-serif;
 }
 @media screen and (max-width: 560px) {
     .Navigation header {
@@ -121,7 +129,7 @@ width: 90%;
 /* logo animation */
 @media (prefers-reduced-motion: no-preference) {
   .logo{
-    animation: App-logo-spin infinite 10s linear;
+    animation: App-logo-spin infinite 5s linear;
   }
 }
 
@@ -130,6 +138,6 @@ width: 90%;
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
 }

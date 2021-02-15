@@ -10,7 +10,7 @@ export class techAfrica extends Component {
     return (
       <div className="tech row container-fluid">
         <div className="container row m-auto">
-       <h3>TECH AFRICA</h3>
+          <h3>TECH AFRICA</h3>
           <div className=" col-sm-11 tech_bg"></div>
           <div className="d-flex row">
             <div className="col-sm-1"></div>
@@ -32,7 +32,7 @@ export class techAfrica extends Component {
                   <Card.Img variant="top" src={Microscope} />
                   <Card.Body>
                     <Card.Text>
-                      How lab course can teach more than science. 
+                      How lab course can teach more than science.
                     </Card.Text>
                   </Card.Body>
                 </Card>

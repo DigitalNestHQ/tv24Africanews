@@ -1,45 +1,69 @@
+.politics-wrap{
+    font-family: 'Roboto', sans-serif;
+}
 .politics-wrap h3{
-    font-size: 24px;
-    color: red;
     text-decoration: underline;
-    padding-left: 30px;
+    padding-left:25px;
     padding-top: 20px;
-    text-shadow: 5px 5px 8px #000;
-    letter-spacing: 4px;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    font-family: "Roboto"sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #EE3039;
+
 }
 .politics-wrap{
-    background-color: #777;
-}
-.news-sec{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular',Geneva, Verdana, sans-serif;
-
+    background-color: #D1D1D1;
 }
 .news-sec a{
     text-decoration: none;
     transition: transform 2s ease;
     height: 100%;
     width: 100%;
-    color: #050505;
+    color: #000;
+    background-color:#D1D1D1
 }
 .news-sec a:hover{
     transform: scale(0.9);
-    color: red;
+    color: hsl(0, 100%, 64%);
     opacity: 0.8;
     transform: scale(0.8);
     cursor: pointer;
 }
 .news-crd{
     position: relative;
+    background-color:#D1D1D1!important;
+    border: none;
+    box-shadow: 0 0 0 0;
+    width: 272px;
+}
+.news-card-img{
+    width: 272px;
+    height: 198px;
 }
 .news-crd label{
     position: absolute;
     top: 15px;
-    left: 10px;
-    z-index: 5;
-    background-color: red;
+    left: 15px;
+    background-color: #DC143C;
     color: #fff;
     display: inline-block;
-    padding: 5px;
+    padding: 2px 7px 2px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.news-card-caption{
+    font-weight: 400;
+    font-size: 1.15rem;
+    margin-left: -1.25rem;
+    color: #000000;
+    line-height:28.13px;
+    font-family: 'Roboto', sans-serif;
 }
 @media screen and (max-width: 772px){
     .politics-wrap h3{

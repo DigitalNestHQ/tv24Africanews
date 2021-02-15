@@ -11,10 +11,10 @@ const lifestyle = () => {
     <div className="entertainment">
       <h3 className="text-center py-2">ENTERTAINMENT</h3>
       <div className="container-fluid ent-chng-pos">
-        <div className="container row w-100 bg-white mx-auto ent-pos-tp">
+        <div className="container-fluid row w-100 bg-white mx-auto ent-pos-tp">
           <div className="col-sm-3 my-2 mg-sm-scr">
-            <Card className="bg-dark text-white mt-wrap h-100">
-              <Card.Img src={Image1} alt="Card image" className="h-100" />
+            <Card className="bg-dark text-white mt-wrap">
+              <Card.Img src={Image1} alt="Card image" className="ent-h-100" />
               <Card.ImgOverlay className="overl">
                 <Card.Text className="">
                   RMD TALKS <br /> ABOUT AGING
@@ -24,8 +24,8 @@ const lifestyle = () => {
             </Card>
           </div>
           <div className="col-sm-3 my-2 mg-sm-scr">
-            <Card className="bg-dark text-white mt-wrap h-100">
-            <Card.Img src={Image1} alt="Card image" className="h-100" />
+            <Card className="bg-dark text-white mt-wrap">
+            <Card.Img src={Image1} alt="Card image" className="ent-h-100" />
               <Card.ImgOverlay className="overl">
                 <Card.Text className="">
                   DRAKE TALKS <br /> BUSINESS
@@ -35,8 +35,8 @@ const lifestyle = () => {
             </Card>
           </div>
           <div className="col-sm-3 my-2 mg-sm-scr">
-          <Card className="bg-dark text-white mt-wrap h-100">
-            <Card.Img src={Image1} alt="Card image" className="h-100" />
+          <Card className="bg-dark text-white mt-wrap">
+            <Card.Img src={Image1} alt="Card image" className="ent-h-100" />
               <Card.ImgOverlay className="overl">
                 <Card.Text className="">
                   NAIRA MARLEY
@@ -46,8 +46,8 @@ const lifestyle = () => {
             </Card>
           </div>
           <div className="col-sm-3 my-2 mg-sm-scr">
-          <Card className="bg-dark text-white mt-wrap h-100">
-            <Card.Img src={Image1} alt="Card image" className="h-100" />
+          <Card className="bg-dark text-white mt-wrap">
+            <Card.Img src={Image1} alt="Card image" className="ent-h-100" />
               <Card.ImgOverlay className="overl">
                 <Card.Text className="">
                   BURNA BOY

@@ -3,10 +3,12 @@
     padding: 30px auto;
 }
 .da_img{
-    height: 150px;
+    height: 200px;
 }
 .africa h3{
     padding-left: 30px;
+    color: hsl(0, 100%, 70%);
+    text-shadow: 1.5px 1px 1px #010202;
 }
 .af-col-tp{
     padding: 15px;
@@ -23,6 +25,28 @@
     background-color:#fff;
     padding: 10px;
 }
+/* .mambila-img{
+    height: 100%!important
+} */
+.af-crd-anc-tp span{
+color: yellow;
+font-style: italic;
+}
+.af-crd-anc-tp p{
+    color: #fff;
+}
+.af-crd-lst{
+    background-color: #fff;
+    padding: 10px;
+}
+.af-crd-lst span{
+font-style: italic;
+color: red;
+}
+.af-crd-anc-bt p{
+    color: #000;
+}
+
 @media screen and (max-width: 560px){
     .africa h3{
         padding-left: 0;

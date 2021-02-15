@@ -15,7 +15,7 @@ export class discoverAfrica extends Component {
         <div className="container-fluid row af-bg-red ml-0">
           <div className="col-sm-6 af-col-tp my-2 mx-auto">
             <Card className="text-white">
-              <Card.Img src={Mambilla} alt="Card image" />
+              <Card.Img src={Mambilla} alt="Card image" className="mambila-img"/>
               <Card.ImgOverlay className="af-card-overl">
                 <Card.Text></Card.Text>
                 <Card.Text className="af-card-txt">MAMBILLA <br/> FOREST</Card.Text>
@@ -25,43 +25,48 @@ export class discoverAfrica extends Component {
           <div className="col-sm-6">
             <div className="row">
               <div className=" col-md-6 mx-auto my-2 mx-auto">
-                <a href="/">
-                  <Card>
+                <a href="/" className="af-crd-anc-tp">
+                  <Card className="af-crd">
                     <Card.Img variant="top" src={Uganda2} className="da_img"/>
                   </Card>
-                  <span>PREMIUM</span>
+                  <span className="spn-yellow">PREMIUM</span>
                       <p>Domestic tourism to prop up Rwanda tourism sector</p>                    
                 </a>
               </div>
               <div className="col-md-6 mx-auto my-2 mx-auto">
-                <a href="/">
-                  <Card>
+                <a href="/" className="af-crd-anc-tp">
+                  <Card className="af-crd">
                     <Card.Img variant="top" src={Uganda} className="da_img"/>
                   </Card>
                   <span>PREMIUM</span>  
                   <p>What is killing Uganda's tourism potential?</p>
                 </a>
               </div>
-            </div>
-            <div className="row">
               <div className=" col-md-6 mx-auto my-2">
-                <a href="/">
+                <a href="/" className="af-crd-anc-bt">
                   <Card className="af-crd">
                     <Card.Img variant="top" src={Calabar}  className="da_img"/>
                   </Card>
+                  <div className="af-crd-lst">
                   <span>PREMIUM</span>
                   <p>Inside Calabar Carnival, africa's biggest street party</p>
+                  </div>
                 </a>
               </div>
               <div className=" col-md-6 mx-auto">
-                <a href="/">
-                  <Card>
+                <a href="/" className="af-crd-anc-bt">
+                  <Card className="af-crd">
                     <Card.Img variant="top" src={Obudu} className="da_img" />
                   </Card>
+                  <div className="af-crd-lst">
                   <span>PREMIUM</span>
                   <p>  Obudu Mountain resort (formerly obudu cattle ranch)</p>
+                  </div>
                 </a>
               </div>
+            </div>
+            <div className="row"> 
+              
             </div>
           </div>
         </div>

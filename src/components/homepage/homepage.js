@@ -18,9 +18,9 @@ function homepage() {
       <Politics />
       <Headlines />
       <InsideAfrica />
-      <Tech />
+      {/* <Tech /> */}
       <Sports />
-      <Lifestyles />
+      {/* <Lifestyles /> */}
       <Entertainment />
       <SubscribeForm />
       <Footer />

@@ -16,7 +16,7 @@ export class sportComponent extends Component {
           <div className="container-fluid mt-3 mb-3 p-2 d-flex row">
             <div className="col-sm-3 sport-sec">
               <a href="/">
-                <Card className="news-crd">
+                <Card className="sport-crd">
                   <Card.Img variant="top" src={Messi} className="sprt-crd-img"/>
                   <Card.Body>
                     <Card.Text>
@@ -44,7 +44,7 @@ export class sportComponent extends Component {
             </div>
             <div className="col-sm-3 sport-sec">
               <a href="/">
-                <Card className="news-crd">
+                <Card className="sport-crd">
                   <Card.Img variant="top" src={Tomori} />
                   <Card.Body>
                     <Card.Text>
@@ -58,7 +58,7 @@ export class sportComponent extends Component {
             </div>
             <div className="col-sm-3 sport-sec">
               <a href="/">
-                <Card className="news-crd">
+                <Card className="sport-crd">
                   <Card.Img variant="top" src={Boxing} />
                   <Card.Body>
                     <Card.Text>

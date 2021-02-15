@@ -8,7 +8,7 @@ import "./homepage.css";
 
 function banner() {
   return (
-    <div className="container-fluid flex-container">
+    <div className="container-fluid flex-container banner">
       <div className="col-sm-8 py-4 ">
         <Carousel className="mt-3 ">
           <Carousel.Item className="caro-item">
@@ -21,8 +21,9 @@ function banner() {
                 US Capitol Hill Attack
               </a>
               <p className="text-white text-left car-p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
-                modi.
+                At first the commotion outside the Senate chamber sounded like a
+                routine disturbance to the members inside, the kind of
+                small-scale protest that often takes place at the Capitol.
               </p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -37,8 +38,9 @@ function banner() {
                 US Capitol Hill Attack
               </a>
               <p className="text-left">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Labore, aspernatur.
+                At first the commotion outside the Senate chamber sounded like a
+                routine disturbance to the members inside, the kind of
+                small-scale protest that often takes place at the Capitol.
               </p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -53,8 +55,9 @@ function banner() {
                 US Capitol Hill Attack
               </a>
               <p className="text-left">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Labore, aspernatur.
+                At first the commotion outside the Senate chamber sounded like a
+                routine disturbance to the members inside, the kind of
+                small-scale protest that often takes place at the Capitol.
               </p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -69,23 +72,20 @@ function banner() {
             >
               End Sars Protest
             </a>
-            <p className="pl-2 pt-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
-              provident?
-            </p>
+            <p>Continues in Lagos</p>
           </div>
         </div>
         <div className="cnt-2 mt-2">
           <div className="cnt-txt-wrap">
             <a
               href="/"
-              className="text-decoration-none inline-block p-2 text-left cap-anco"
+              className="text-decoration-none inline-block p-1 text-left cap-anco mt-5"
             >
               Mambilla Forest
             </a>
-            <p className="pl-2 pt-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
-              provident?
+            <p>
+              The Mambilla Forest is a plateau in the Taraba State of Nigeria
+              Lorem ipsum dolor sit amet consectetur
             </p>
           </div>
         </div>

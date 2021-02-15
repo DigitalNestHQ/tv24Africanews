@@ -1,11 +1,21 @@
+.sport{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 .sport h3{
-    font-size: 20px;
+    font-size: 25px;
     color: red;
     text-decoration: underline;
+    padding-left: 30px;
+    text-shadow: 1px 1px 1px #000;
+    /* display: inline-block; */
 }
 .sport-sec{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular',Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
 
+}
+.sport-crd{
+    background-color: #fff;
 }
 .sport-sec a{
     text-decoration: none;

@@ -2,10 +2,11 @@
     margin-top: 40px;
     margin-bottom: 40px
 }
- h3{
+ .tech h3{
     color: red;
     padding-top: 10px;
     padding-bottom: 20px;
+    letter-spacing: 3px;
 }
 .tech_bg{
     background-image: url("../../../assets/images/tech_1.jpg");
