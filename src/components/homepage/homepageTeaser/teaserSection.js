@@ -20,9 +20,8 @@ const teaserSection = () => {
               </Button>
 
               <Card.Text className="ts-card-txt">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Labs by ARM 3.0 is designed to engage post-MVP FinTech startups
+                in a series of activities aimed at exponentially advancing
               </Card.Text>
             </Card.ImgOverlay>
           </Card>
@@ -39,9 +38,9 @@ const teaserSection = () => {
               </Button>
 
               <Card.Text className="ts-card-txt">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Watch the best live coverage of your favourite sports: Football,
+                Golf, Rugby, Cricket, Tennis, F1, Boxing, plus the latest sports
+                news, transfers & scores.
               </Card.Text>
             </Card.ImgOverlay>
           </Card>
@@ -54,9 +53,9 @@ const teaserSection = () => {
                 Travel
               </Button>
               <Card.Text className="ts-card-txt">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Travelstart is Africa's leading online travel agency. Based in
+                sunny Cape Town, we have offices across Africa and the Middle
+                East where hundreds of Travelstarters
               </Card.Text>
             </Card.ImgOverlay>
           </Card>
@@ -69,9 +68,9 @@ const teaserSection = () => {
                 Event
               </Button>
               <Card.Text className="ts-card-txt">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Calabar Carnival festival in Nigeria, also tagged "Africa's
+                Biggest Street Party", was created as part of the vision of
+                making the Cross River State, Nigeria, the ...
               </Card.Text>
             </Card.ImgOverlay>
           </Card>
