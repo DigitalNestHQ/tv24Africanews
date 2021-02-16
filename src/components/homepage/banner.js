@@ -63,8 +63,8 @@ function banner() {
           </Carousel.Item>
         </Carousel>
       </div>
-      <div className="col-sm-4 py-4">
-        <div className="cnt-1 mb-2">
+      <div className="col-sm-4 py-4 mt-3">
+        <div className="cnt-1">
           <div className="cnt-txt-wrap">
             <a
               href="/"
@@ -75,7 +75,7 @@ function banner() {
             <p>Continues in Lagos</p>
           </div>
         </div>
-        <div className="cnt-2 mt-2">
+        <div className="cnt-2">
           <div className="cnt-txt-wrap">
             <a
               href="/"

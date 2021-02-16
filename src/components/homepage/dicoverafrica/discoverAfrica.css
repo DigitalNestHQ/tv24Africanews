@@ -126,4 +126,11 @@ color: red;
     .af-card-overl{
         top: 20px;
     }
+    .af-col-tp-bg p{
+        padding-left: 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 46px;
+    }
 }

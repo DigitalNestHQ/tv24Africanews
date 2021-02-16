@@ -13,7 +13,6 @@
 .news-bg-wrapper{
     background-color: #fff;
     padding-top: 15px;
-    /* padding-bottom: 15px; */
     border-top: 1px solid red;
     position: relative;
     left: -5%;
@@ -21,7 +20,8 @@
 }
 .bg-var-blue{
     margin-bottom: 10px;
-    padding: 15px auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: #f2fdff;
 }
 .news-hd{

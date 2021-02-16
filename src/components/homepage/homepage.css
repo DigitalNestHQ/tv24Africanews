@@ -13,12 +13,10 @@
         url("../../assets/images/Mambilla-Plateau.jpg")top/cover fixed no-repeat;
     color: #fff;
 }
-
 .car-p {
     font-size: 14px;
     line-height: 22px;
 }
-
 .cap-ancor {
     font-weight: 500;
     background-color: #fff;
@@ -44,12 +42,12 @@
 }
 
 .caro-capxn {
-    z-index: 4 !important;
+    z-index: 4!important;
 }
 
 .caro-capxn p {
     width: 70%;
-    font-weight: 400 !important;
+    font-weight: 400!important;
     line-height: 28.13px;
     padding-top: 10px;
     font-size: 24px;
@@ -117,9 +115,12 @@
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6))
     }
 
-    .cnt-2,
+    .cnt-2{
+        height: 200px;
+        margin-top: 22px;
+    }
     .cnt-1 {
-        height: 210px;
+        height: 228px;
     }
 
 }

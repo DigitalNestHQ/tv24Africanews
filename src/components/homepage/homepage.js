@@ -7,6 +7,7 @@ import Politics from "./politics/politicsComponent";
 import Headlines from "./headlines/headlineComponent";
 import Lifestyles from "./lifestyle/lifestyleComponent";
 import Entertainment from "./entertainment/entertainmentComponent";
+import Business from "./businessFinance/business"
 import Tech from "./techafrica/techAfrica";
 import Sports from "./sports/sportComponent";
 import InsideAfrica from "./dicoverafrica/discoverAfrica";
@@ -17,6 +18,7 @@ function homepage() {
       <TeaserSection />
       <Politics />
       <Headlines />
+      <Business />
       <InsideAfrica />
       {/* <Tech /> */}
       <Sports />
