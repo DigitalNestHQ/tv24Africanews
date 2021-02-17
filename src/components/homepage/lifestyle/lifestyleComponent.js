@@ -1,9 +1,9 @@
 import React from "react";
-import Image1 from "../../../assets/images/tech_1.jpg";
-import Image2 from "../../../assets/images/athletic.jpg";
-import Image3 from "../../../assets/images/tech2.jpg";
-import Image4 from "../../../assets/images/travel1.jpg";
-import { Card, Button } from "react-bootstrap";
+import SmilingBae from "../../../assets/images/theladies.jpg";
+import BusTycoon from "../../../assets/images/thebusiness.jpg";
+import Ibile from "../../../assets/images/thecap.jpg";
+import Beauty from "../../../assets/images/thesmile.jpg";
+import { Card } from "react-bootstrap";
 import "./lifestyle.css";
 
 const lifestyle = () => {
@@ -11,36 +11,42 @@ const lifestyle = () => {
     <div className="lifestyle mt-3 mb-3 pt-3 pb-3">
       <h3 className="text-center py-2 text-white">LIFESTYLES</h3>
       <div className="container-fluid">
-        <div className="container row mx-auto lf-wrap bg-white">
-          <div className="col-sm-3 my-2">
-            <Card className="bg-dark text-white mt-wrap h-100">
-              <Card.Img src={Image1} alt="Card image" className="h-100" />
+        <div className="container-fluid row mx-auto lf-wrap bg-white">
+        <div className="col-sm-3 my-2 mg-sm-scr">
+            <Card className="bg-dark text-white mt-wrap">
+              <Card.Img src={SmilingBae} alt="Card image" className="ent-h-100" />
               <Card.ImgOverlay className="overl">
-                <Card.Text className="">The ladies</Card.Text>
+                <Card.Text className="">
+                  THE <br /> LADIES
+                </Card.Text>
               </Card.ImgOverlay>
             </Card>
           </div>
-          <div className="col-sm-3 my-2">
-            <Card className="bg-dark text-white mt-wrap h-100">
-              <Card.Img src={Image3} alt="Card image" />
+          <div className="col-sm-3 my-2 mg-sm-scr">
+            <Card className="bg-dark text-white mt-wrap">
+              <Card.Img src={BusTycoon} alt="Card image" className="ent-h-100" />
               <Card.ImgOverlay className="overl">
-                <Card.Text>The business talk</Card.Text>
+                <Card.Text className="">
+                  THE <br /> BUSINESS
+                </Card.Text>
               </Card.ImgOverlay>
             </Card>
           </div>
-          <div className="col-sm-3 my-2">
-            <Card className="bg-dark text-white mt-wrap h-100">
-              <Card.Img src={Image4} alt="Card image" />
+          <div className="col-sm-3 my-2 mg-sm-scr">
+            <Card className="bg-dark text-white mt-wrap">
+              <Card.Img src={Ibile} alt="Card image" className="ent-h-100" />
               <Card.ImgOverlay className="overl">
-                <Card.Text>men who wear cap</Card.Text>
+                <Card.Text className="">MEN WHO<br /> WEAR CAP</Card.Text>
               </Card.ImgOverlay>
             </Card>
           </div>
-          <div className="col-sm-3 my-2">
-            <Card className="bg-dark text-white mt-wrap h-100">
-              <Card.Img src={Image3} alt="Card image" className="h-100" />
+          <div className="col-sm-3 my-2 mg-sm-scr">
+            <Card className="bg-dark text-white mt-wrap">
+              <Card.Img src={Beauty} alt="Card image" className="ent-h-100" />
               <Card.ImgOverlay className="overl">
-                <Card.Text>The smile</Card.Text>
+                <Card.Text className="">
+                  THE<br /> SMILE
+                </Card.Text>
               </Card.ImgOverlay>
             </Card>
           </div>

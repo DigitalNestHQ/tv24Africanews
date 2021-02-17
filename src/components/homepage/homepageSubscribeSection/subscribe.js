@@ -5,17 +5,16 @@ import "./subscribe.css"
 
 const subscribe = () => {
   return (
-    <div classnames="bg-white pt-3 pb-3 mt-4 mb-4">
-      <div className="row container-fluid">
+    <div classnames="bg-white py-3 my-4 px-2">
+      <div className="subscription-wrap">
         <div className="col-sm-3 sub-logo mb-3">
           <img src={LogoRed} alt="Logo sub-logo" />
         </div>
-        <div className="col-sm-3 mb-3"></div>
-        <div className="col-sm-6 mb-3">
+        <div className="col-sm-6 mb-3 sub-inpt-cont">
           <Form action="" method="post" className="subscribe-form mt-4">
             <InputGroup className="inpt">
               <FormControl
-                className="sb-cntrl p-4"
+                className="sb-cntrl"
                 placeholder="Your Email"
                 aria-label="Recipient's username"
                 aria-describedby="basic-addon2"

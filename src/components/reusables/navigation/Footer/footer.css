@@ -30,18 +30,21 @@
   background-color: inherit;
 }
 .app-store{
-  background-color: #fff;
+  /* background-color: #777; */
   width: auto;
   border-radius: 10px;
+  height: 62px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 5px;
-  border: 1px solid green;
+
 }
 .app-store a img{
-  width: 120px;
+  width: 150px;
   margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
 footer a,
@@ -51,12 +54,27 @@ footer p{
   color: white;
   text-transform: capitalize;
 }
+footer .fab{
+  font-weight: bold;
+}
+footer{
+  font-family: 'Gothic A1', sans-serif;
+  font-style: normal;
+}
 footer h3:not(.ps_p){
   color: white;
-  text-transform: capitalize;
-  padding: 5px;
-  background-color: red;
-  display: inline-block;
+  text-transform: uppercase;
+  background-color: #FF0606;
+  text-align: center;
+  height: 28px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 900;
+  padding-top: 6px;
+}
+.ps_p {
+  font-size: 18px;
+  line-height: 22px;
 }
 footer ul{
   list-style-type: none;
@@ -67,7 +85,7 @@ footer ul li a{
 footer ul li:hover{
   border-top: .8px solid lightblue;
   border-bottom: .8px solid lightblue;
-  padding: 3px 5px 0;
+  padding: 2px 2px 0;
   display: inline-block;
 }
 footer ul li a:hover{
@@ -79,3 +97,17 @@ footer small{
   font-size: 20px;
   text-align: center
 }
+.ft-hd-1 {
+  width: 77px;
+}
+.ft-hd-2,
+.ft-hd-3{
+  width: 106px;
+}
+footer ul li,
+footer p{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+

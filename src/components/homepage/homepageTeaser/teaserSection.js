@@ -6,12 +6,16 @@ import Image4 from "../../../assets/images/travel1.jpg";
 import { Card, Button } from "react-bootstrap";
 
 import "../homepage.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const teaserSection = () => {
+
+const TeaserSection = () => {
+  AOS.init();
   return (
-    <div className="teaser mt-3 mb-3 mx-auto">
+    <div className="teaser mt-3 mb-3 mx-auto" data-aos="fade-up" data-aos-delay="10">
       <div className="row container-fluid mx-auto">
-        <div className="col-sm-3 my-2 ts-card-wrap">
+        <div className="col-sm-3 my-2 ts-card-wrap" data-aos="fade-right">
           <Card className="text-white mt-wrap h-100">
             <Card.Img src={Image1} alt="Card image" className="h-100" />
             <Card.ImgOverlay className="m-t text-center ts-overlay">
@@ -60,7 +64,7 @@ const teaserSection = () => {
             </Card.ImgOverlay>
           </Card>
         </div>
-        <div className="col-sm-3 mt-2 mb-2 ts-card-wrap">
+        <div className="col-sm-3 mt-2 mb-2 ts-card-wrap" data-aos="fade-left">
           <Card className="text-white mt-wrap h-100">
             <Card.Img src={Image3} alt="Card image" className="h-100 bg-none" />
             <Card.ImgOverlay className="m-t text-center ts-overlay">
@@ -80,4 +84,4 @@ const teaserSection = () => {
   );
 };
 
-export default teaserSection;
+export default TeaserSection;

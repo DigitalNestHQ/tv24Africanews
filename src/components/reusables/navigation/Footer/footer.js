@@ -1,8 +1,8 @@
 import React from "react";
 // import { pageurl } from "../../../utils/constants";
 import { Card, Button, ListGroup } from "react-bootstrap";
-import GooglePlayImg from "../../../../assets/images/googleplay.JPG";
-import ApplePlayImg from "../../../../assets/images/apple-store.JPG";
+import GooglePlayImg from "../../../../assets/images/playstoreimg.png";
+import ApplePlayImg from "../../../../assets/images/apple.jpg";
 import "./footer.css";
 const Footer = () => {
   return (
@@ -10,27 +10,27 @@ const Footer = () => {
       <footer className="footer">
         <div className="row">
           <div className="col-sm-3">
-            <h3>categories</h3>
+            <h3 className="ft-hd-1">About</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis alias hic nam corporis doloribus magnam?
+              TV24 Africa Newspaper is Africa’s top online publication
+              delivering breaking news and in-depth analysis in business,
+              politics, entertainment, sports, lifestyle and many more.
             </p>
-                <Card.Link href="#">
-                  <i className="fab fa-facebook"></i>
-                </Card.Link>
-                <Card.Link href="#">
-                  <i className="fab fa-twitter"></i>
-                </Card.Link>
-                <Card.Link href="#">
-                  <i className="fab fa-instagram"></i>
-                </Card.Link>
-                <Card.Link href="#">
-                  <i className="fab fa-youtube"></i>
-                </Card.Link>
-
+            <Card.Link href="#">
+              <i className="fab fa-facebook"></i>
+            </Card.Link>
+            <Card.Link href="#">
+              <i className="fab fa-twitter"></i>
+            </Card.Link>
+            <Card.Link href="#">
+              <i className="fab fa-instagram"></i>
+            </Card.Link>
+            <Card.Link href="#">
+              <i className="fab fa-youtube"></i>
+            </Card.Link>
           </div>
           <div className="col-sm-3 ">
-            <h3>categories</h3>
+            <h3 className="ft-hd-2">categories</h3>
             <ul>
               <li>
                 <a href="/">Contact Us</a>
@@ -59,7 +59,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-sm-3 ft-crd">
-            <h3>company</h3>
+            <h3 className="ft-hd-3">company</h3>
             <ul>
               <li>
                 <a href="/">About Us</a>

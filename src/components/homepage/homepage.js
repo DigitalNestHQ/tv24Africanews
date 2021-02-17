@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment, useEffect } from "react";
 import Banner from "./banner";
 import TeaserSection from "./homepageTeaser/teaserSection";
 import Footer from "../reusables/navigation/Footer/footer";
@@ -11,23 +11,29 @@ import Business from "./businessFinance/business"
 import Tech from "./techafrica/techAfrica";
 import Sports from "./sports/sportComponent";
 import InsideAfrica from "./dicoverafrica/discoverAfrica";
-function homepage() {
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+function Homepage() {
+  useEffect(() => {
+    AOS.init();
+})
   return (
-    <div>
+    <Fragment className="aos-init aos-animate">
       <Banner />
-      <TeaserSection />
+      <TeaserSection data-aos="fade-up"/>
       <Politics />
       <Headlines />
       <Business />
       <InsideAfrica />
-      {/* <Tech /> */}
+      <Tech />
       <Sports />
-      {/* <Lifestyles /> */}
+      <Lifestyles />
       <Entertainment />
       <SubscribeForm />
       <Footer />
-    </div>
+    </Fragment>
   );
 }
 
-export default homepage;
+export default Homepage;
