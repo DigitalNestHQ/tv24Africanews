@@ -1,6 +1,7 @@
 export const pageurl = {
     HOMEPAGE: "/",
     SIGNUP: "/signup",
+    CATEGORY: "/category",
     CONTACT: "/contact",
     SIGNIN: "/login",
     PRIVACYPOLICY: "/privacy-policy",

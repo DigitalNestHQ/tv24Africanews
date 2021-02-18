@@ -33,6 +33,7 @@ const TeaserSection = () => {
         <div
           className="col-sm-3 mt-2 mb-2 ts-card-wrap"
           style={{ backgroundColor: "none" }}
+          data-aos="zoom-in-down"
         >
           <Card className="text-white h-100">
             <Card.Img src={Image2} alt="Card image" className="h-100 w-100" />
@@ -49,7 +50,7 @@ const TeaserSection = () => {
             </Card.ImgOverlay>
           </Card>
         </div>
-        <div className="col-sm-3 mt-2 mb-2 ts-card-wrap">
+        <div className="col-sm-3 mt-2 mb-2 ts-card-wrap" data-aos="zoom-out-up">
           <Card className="text-white mt-wrap h-100">
             <Card.Img src={Image4} alt="Card image" className="h-100" />
             <Card.ImgOverlay className="m-t text-center ts-overlay">

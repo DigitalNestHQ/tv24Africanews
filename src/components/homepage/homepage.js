@@ -21,7 +21,7 @@ function Homepage() {
   return (
     <Fragment className="aos-init aos-animate">
       <Banner />
-      <TeaserSection data-aos="fade-up"/>
+      <TeaserSection />
       <Politics />
       <Headlines />
       <Business />
