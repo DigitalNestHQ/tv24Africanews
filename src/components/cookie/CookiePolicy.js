@@ -1,0 +1,21 @@
+import React from "react";
+import "./cookie.css";
+
+const CookiePolicy = () => {
+  return (
+    <div className="container-fluid cookie-container">
+      <h3>TV24 Africa Cookie Policy</h3>
+      <div className="cookie-txt">
+      <p>
+        A cookie is a small piece of text sent to your browser by a website that
+        you visit. They are used for various reasons such as saving your search
+        preferences, helping you to register for our services or providing you
+        with targeted advertising.
+      </p>
+      <p>Thus, the cookies allow you to facilitate your visit on our website and they help to meet your expectations. You can view and manage cookies in your browser including blocking or deleting them completely, please refer to your browser manufacturer’s help documentation on how to do this.</p>
+
+      </div>
+    </div>
+  );
+};
+export default CookiePolicy;

@@ -1,7 +1,6 @@
 import React, { Fragment, useEffect } from "react";
 import Banner from "./banner";
 import TeaserSection from "./homepageTeaser/teaserSection";
-import Footer from "../reusables/navigation/Footer/footer";
 import SubscribeForm from "./homepageSubscribeSection/subscribe";
 import Politics from "./politics/politicsComponent";
 import Headlines from "./headlines/headlineComponent";
@@ -31,7 +30,6 @@ function Homepage() {
       <Lifestyles />
       <Entertainment />
       <SubscribeForm />
-      <Footer />
     </Fragment>
   );
 }

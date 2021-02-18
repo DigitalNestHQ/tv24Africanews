@@ -48,6 +48,7 @@ footer h3:not(.ps_p){
   line-height: 17px;
   font-weight: 900;
   padding-top: 6px;
+  align-self: flex-start;
 }
 .ps_p {
   font-size: 18px;
