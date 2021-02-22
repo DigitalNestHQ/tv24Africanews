@@ -13,7 +13,7 @@ import 'aos/dist/aos.css';
 const TeaserSection = () => {
   AOS.init();
   return (
-    <div className="teaser mt-3 mb-3 mx-auto" data-aos="fade-up" data-aos-delay="10">
+    <div className="teaser mt-3 mb-3 mx-auto" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
       <div className="row container-fluid mx-auto">
         <div className="col-sm-3 my-2 ts-card-wrap" data-aos="fade-right">
           <Card className="text-white mt-wrap h-100">

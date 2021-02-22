@@ -30,7 +30,8 @@ class Categories extends Component {
             hospitality.
           </p>
           <p>
-            Programmes The programme of the event at the carnival are drafted
+            Programmes <br/>
+            The programme of the event at the carnival are drafted
             each year by the committee in charge of tourism and cultural
             activities and new initiatives are introduced every year. In
             December 2009, Carnival Committee organized "Carnival Cup 2009", a

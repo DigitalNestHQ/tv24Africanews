@@ -13,9 +13,7 @@ export class discoverAfrica extends Component {
         <h3>DISCOVER AFRICA</h3>
         <div className="container-fluid row af-bg-red ml-0">
           <div className="col-sm-6 af-col-tp my-2 mx-auto">
-            <div className="af-col-tp-bg">
               <p>MAMBILA FOREST</p>
-            </div>
           </div>
           <div className="col-sm-6 af-col-bt">
             <div className="row af-sm-news">

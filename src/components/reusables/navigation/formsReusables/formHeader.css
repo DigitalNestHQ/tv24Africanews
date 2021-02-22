@@ -1,0 +1,26 @@
+.formHeader{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center
+}
+.formHeader img{
+    width: 78px;
+    height: 78px;
+}
+.links-item{
+    display: inline-block;
+    padding: 5px 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+.lnk2{
+    color: #FF0000;
+    background-color: #fff
+}
+.lnk1{
+    color: #fff;
+}

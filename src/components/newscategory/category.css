@@ -12,31 +12,32 @@
     line-height: 75px;
     color: #020000;
     text-align: left;
+    margin-left: 0.1rem;
     text-transform: capitalize;
 }
 .categ-banner{
     display: flex;
     justify-content: space-between;
     align-items: top;
-    /* height: 520px; */
 }
 .categ-banner-main {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-        url("../../assets/images/calabar-carnival-3.jpg")100%/cover no-repeat;
-    /* color: #fff; */
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.15)),
+        url("../../assets/images/discoverbanner.jpg")100%/cover no-repeat;
     height: 507px;
     width: 70%;
-    /* flex-grow: 3; */
 }
 .categ-ad{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.01)),
         url("../../assets/images/ads1.jpg")center/cover no-repeat;
-    /* color: #fff; */
     height: 465px;
     width: 25%;
 }
-.categ-text p{
+.categ-txt{
+    padding-top: 20px;
+}
+.categ-txt p{
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
+    text-align: justify;
 }

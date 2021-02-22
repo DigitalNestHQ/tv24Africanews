@@ -1,0 +1,106 @@
+.subscribe-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.subscribe-header {
+    color: "i will be right back"
+}
+/* .ban-overlay {
+    position: relative;
+} */
+.sub-banner {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    height: 263px;
+    /* position: absolute; */
+    /* width: 100%; */
+    /* z-index: 1; */
+}
+
+.sub-banner p {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.pay_plan-wrap {
+    background: linear-gradient(rgba(85, 22, 22, 0.5), rgba(85, 22, 22, 0.5)),
+        url("../../assets/images/elephant.jpg")center/cover fixed no-repeat;
+    padding: 20px;
+    max-width: 1100;
+    margin: 0 auto;
+    mix-blend-mode: multiply;
+ 
+}
+
+.pay_plan-wrap h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: #fff;
+}
+
+.sub-curency {
+    width: 235px;
+    height: 33px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.sub-curency_ngn,
+.sub-curency_usd {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.sub-curency_ngn {
+    color: #018651;
+}
+
+.sub-curency_usd {
+    color: #B22234;
+}
+
+.sub-crd-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.sub-crd-txt {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.sub-amount {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FF1717;
+    text-align: center;
+}
+
+.sub-signup {
+    padding: 10px 35px;
+    border-radius: 10px;
+    background: #FF1717;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.signup-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

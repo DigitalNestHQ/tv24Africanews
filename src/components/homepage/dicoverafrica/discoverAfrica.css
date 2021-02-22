@@ -8,7 +8,7 @@
     font-family: 'Roboto', sans-serif;
 }
 .da_img{
-    width: 280px;
+    width: 100%;
     height: 237px;
 }
 .af-bg-red a:hover{
@@ -22,11 +22,21 @@
     line-height: 56px;
     color: #EE3039;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: underline;
+    text-decoration-color: #EE3039;
+    margin-left: 1.25rem;
 }
 .af-col-tp{
     background-color:#fff;
     position: relative;
     top: 50px;
+    max-width: 610px!important;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+    url("../../../assets/images/Mambilla-Plateau.jpg")center/cover fixed no-repeat;
+    height: 750px;
+    width:600px;
+    margin: 0 auto;
+    border: 6px solid #fff;
 }
 .af-col-bt{
     position: relative;
@@ -40,7 +50,7 @@
     position: relative;
     top: 55px;
 }
-.af-col-tp-bg p{
+.af-col-tp p{
     color:#fff;
     font-style: italic;
     font-weight: 500;
@@ -58,14 +68,6 @@
     top: 55%;
     left: 2%
 }
-.af-col-tp-bg{
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
-    url("../../../assets/images/Mambilla-Plateau.jpg")center/cover fixed no-repeat;
-    height: 750px;
-    width:100%;
-    margin-top: 10px;
-    padding-bottom: 10px;
-}
 
 .af-card-txt{
     font-size: 50px;
@@ -76,8 +78,6 @@
 }
 .af-crd-anc-tp>div,
 .af-crd-anc-bt>div{
-    padding: 8px;
-    background-color:#fff;
     border: 6px solid #fff;
 }
 .af-crd-anc-tp span{
@@ -104,12 +104,15 @@ line-height: 16px;
     width: 280px;
 }
 .af-crd-lst{
-    background-color: #fff;
-    padding: 10px;
+    background-color:#fff;
+    padding-top: 0
 }
 .af-crd-lst span{
 font-style: italic;
-color: red;
+color: #FF0000;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
 }
 .af-crd-anc-bt p{
     color: #000;

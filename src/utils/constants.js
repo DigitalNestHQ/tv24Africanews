@@ -9,6 +9,7 @@ export const pageurl = {
     BUSINESS: "/business",
     COOKIEPOLICY: "/cookie-policy",
     ENTERTAINMENT: "/entertainment",
+    SUBSCRIBE: "/subscribe",
     LIFESTYLE: "/lifestyles",
     FAQ: "/faq",
     DISCOVER: "/discover",

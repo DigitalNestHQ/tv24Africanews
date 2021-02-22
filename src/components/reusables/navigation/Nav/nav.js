@@ -1,26 +1,26 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import logo from "../../../../assets/images/TV24Ergb.png";
 import { pageurl } from "../../../../utils/constants";
 import { NavLink } from "react-router-dom";
-import { Button } from "reactstrap";
 import TopNav from "../../topnav";
 import "./nav.css";
 import "../../header.css";
 
 const Navbar = () => {
   return (
+    // <Router>
     <div className="Navigation">
       <TopNav />
       <header >
         <div className="container-fluid">
           <nav className="navbar navbar-expand-lg navbar-light navigation py-3 px-1">
-            <a
+            <Link to={pageurl.HOMEPAGE}
               className="navbar-brand logo"
-              href={pageurl.HOMEPAGE}
               style={{ color: "#fff" }}
             >
               <img src={logo} alt="logo" />
-            </a>
+            </Link>
             <button
               className="navbar-toggler d-lg-none"
               type="button"
@@ -93,16 +93,15 @@ const Navbar = () => {
               </ul>
               <ul className="navbar-nav ml-auto mt-2 mt-lg-0 nav-sub-i">
                 <li className="nav-item hd-bd">
-                  <a
+                  <Link to="/login"
                     className="nav-link mt-3 mt-lg-0 px-4 text-white nav-sub-tp"
-                    href={pageurl.SIGNIN}
                   >
                   <i className="fas fa-sign-in-alt"></i>
                     SIGN IN
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item hd-bd">
-                  <a href="/" className="nav-link nav-sub mt-3 mt-lg-0">subscribe</a>
+                  <Link to="/subscribe" className="nav-link nav-sub mt-3 mt-lg-0">subscribe</Link>
                   <i className="fas fa-search"></i>
                 </li>
               </ul>
@@ -111,6 +110,7 @@ const Navbar = () => {
         </div>
       </header>
     </div>
+    // </Router>
   );
 };
 

@@ -39,26 +39,38 @@ footer{
   font-style: normal;
 }
 footer h3:not(.ps_p){
+  background-color: #FF0606;
+
+}
+footer h3, 
+.ps_p{
   color: white;
   text-transform: uppercase;
-  background-color: #FF0606;
-  text-align: center;
   height: 28px;
   font-size: 14px;
   line-height: 17px;
   font-weight: 900;
   padding-top: 6px;
-  align-self: flex-start;
+  align-self: left;
 }
 .ps_p {
   font-size: 18px;
   line-height: 22px;
+}
+.footer .col-sm-3 ul,
+.footer .col-sm-3 p{
+  padding-top: 10px
 }
 footer ul{
   list-style-type: none;
 } 
 footer ul li a{
   text-decoration: none;
+}
+footer ul li{
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
 }
 footer ul li:hover{
   border-top: .8px solid lightblue;
@@ -75,12 +87,14 @@ footer small{
   font-size: 20px;
   text-align: center
 }
-.ft-hd-1 {
-  width: 77px;
-}
+
 .ft-hd-2,
+.ft-hd-1,
 .ft-hd-3{
-  width: 106px;
+  text-align: left;
+  margin-left: -0.1rem;
+  display: inline-block;
+  padding-right: 10px;
 }
 footer ul li,
 footer p{
