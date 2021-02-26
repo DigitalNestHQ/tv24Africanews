@@ -1,5 +1,6 @@
-import React, { useContext, useEffect } from "react";
-// import Nav from "";
+import React, { useContext, useEffect, Fragment } from "react";
+import Nav from "../reusables/navigation/Nav/Nav";
+import Footer from "../reusables/navigation/Footer/Footer";
 import { Card } from "react-bootstrap";
 import Hyunda from "../../assets/images/Hyunda.jpg";
 import Opec from "../../assets/images/opec.jpg";
@@ -8,14 +9,16 @@ import WorldBank from "../../assets/images/wbank.jpg";
 import AuthContext from "../../context/auth/authContext";
 import "./category.css";
 
-const Categories = props => {
+const Categories = (props) => {
   const authContext = useContext(AuthContext);
 
   useEffect(() => {
     authContext.loadUser();
-    // eslint-disable-next-line 
-  }, [])
-    return (
+    // eslint-disable-next-line
+  }, []);
+  return (
+    <Fragment>
+      <Nav />
       <div className="container-fluid categ-wrap">
         <h3>calabar festival</h3>
         <div className="categ-banner">
@@ -36,18 +39,18 @@ const Categories = props => {
             hospitality.
           </p>
           <p>
-            Programmes <br/>
-            The programme of the event at the carnival are drafted
-            each year by the committee in charge of tourism and cultural
-            activities and new initiatives are introduced every year. In
-            December 2009, Carnival Committee organized "Carnival Cup 2009", a
-            football competition amongst the five competing carnival bands -
-            Seagull, Passion 4, Masta Blasta, Bayside and Freedom. The Festival
-            also included music performance from both local and international
-            artists, the annual Calabar Carnival, Boat regatta, Fashion shows
-            (introduced in 2016), Beauty pageant (Miss Africa introduced in
-            2016[2]) Christmas Village, traditional dances and the annual Ekpe
-            Festival is a yearly events that brings in thousands of tourists.[1]
+            Programmes <br />
+            The programme of the event at the carnival are drafted each year by
+            the committee in charge of tourism and cultural activities and new
+            initiatives are introduced every year. In December 2009, Carnival
+            Committee organized "Carnival Cup 2009", a football competition
+            amongst the five competing carnival bands - Seagull, Passion 4,
+            Masta Blasta, Bayside and Freedom. The Festival also included music
+            performance from both local and international artists, the annual
+            Calabar Carnival, Boat regatta, Fashion shows (introduced in 2016),
+            Beauty pageant (Miss Africa introduced in 2016[2]) Christmas
+            Village, traditional dances and the annual Ekpe Festival is a yearly
+            events that brings in thousands of tourists.[1]
           </p>
           <p>
             Other activities that make up this carnival include Essay Writing
@@ -164,6 +167,8 @@ const Categories = props => {
           </div>
         </div>
       </div>
-    );
-  }
+      <Footer />
+    </Fragment>
+  );
+};
 export default Categories;

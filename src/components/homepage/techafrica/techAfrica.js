@@ -5,7 +5,7 @@ import Truck from "../../../assets/images/cybertruck1.jpg";
 import Telescope from "../../../assets/images/tech2.jpg";
 import "./tech.css";
 
-export class techAfrica extends Component {
+class TechAfrica extends Component {
   render() {
     return (
       <div className="tech">
@@ -61,4 +61,4 @@ export class techAfrica extends Component {
   }
 }
 
-export default techAfrica;
+export default TechAfrica;
