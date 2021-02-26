@@ -3,6 +3,7 @@ export const pageurl = {
     SIGNUP: "/signup",
     CATEGORY: "/category",
     CONTACT: "/contact",
+    ABOUT: "/about",
     SIGNIN: "/login",
     PRIVACYPOLICY: "/privacy-policy",
     GOVERNANCE: "/governance",

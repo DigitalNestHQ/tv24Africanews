@@ -1,14 +1,20 @@
-import React, { Component } from "react";
+import React, { useContext, useEffect } from "react";
 // import Nav from "";
 import { Card } from "react-bootstrap";
 import Hyunda from "../../assets/images/Hyunda.jpg";
 import Opec from "../../assets/images/opec.jpg";
 import Amazon from "../../assets/images/amazon.jpg";
 import WorldBank from "../../assets/images/wbank.jpg";
+import AuthContext from "../../context/auth/authContext";
 import "./category.css";
 
-class Categories extends Component {
-  render() {
+const Categories = props => {
+  const authContext = useContext(AuthContext);
+
+  useEffect(() => {
+    authContext.loadUser();
+    // eslint-disable-next-line 
+  }, [])
     return (
       <div className="container-fluid categ-wrap">
         <h3>calabar festival</h3>
@@ -160,6 +166,4 @@ class Categories extends Component {
       </div>
     );
   }
-}
-
 export default Categories;

@@ -4,7 +4,6 @@ import Image2 from "../../../assets/images/athletic.jpg";
 import Image3 from "../../../assets/images/calabar-carnival-3.jpg";
 import Image4 from "../../../assets/images/travel1.jpg";
 import { Card, Button } from "react-bootstrap";
-
 import "../homepage.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';

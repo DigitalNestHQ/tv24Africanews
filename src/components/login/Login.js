@@ -1,10 +1,53 @@
-import React from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { pageurl } from "../../utils/constants";
 import FormHeader from "../reusables/navigation/formsReusables/FormHeader";
+import Alerts from "../alert/Alerts";
+import AlertContext from "../../context/alert/alertContext";
+import AuthContext from "../../context/auth/authContext";
 import "./login.css";
 
-const Login = () => {
+const Login = (props) => {
+  const alertContext = useContext(AlertContext);
+  const authContext = useContext(AuthContext);
+
+  const { setAlert } = alertContext;
+  const { login, error, clearErrors, isAuthenticated } = authContext;
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      setTimeout(() => {
+        props.history.push("/category");
+      }, 5000);
+    }
+    if (error) {
+      setAlert(error, "danger");
+      clearErrors();
+    }
+    // eslint-disable-next-line
+  }, [error]);
+
+  const [user, setUser] = useState({
+    email: "",
+    password: "",
+  });
+
+  const { email, password } = user;
+  const onChange = (e) => setUser({ ...user, [e.target.name]: e.target.value });
+  const onSubmit = (e) => {
+    e.preventDefault();
+    if (email === "" || password === "") {
+      setAlert("email or password not correct", "danger");
+    }
+    if(!error) {
+      login({
+        email,
+        password,
+      });
+      setAlert("login successful", "success");
+    }
+    console.log("Logging in...");
+  };
   return (
     <div className="login">
       <div className="page-wrap">
@@ -16,36 +59,52 @@ const Login = () => {
           </div>
           <div className="form-wrap">
             <h2>Sign In</h2>
-            <form className="form login-form">
+            <Alerts />
+            <form className="form login-form" onSubmit={onSubmit}>
               <div class="mb-3">
-                <label for="email" class="form-label">
+                <label htmlFor="email" class="form-label">
                   Email
                 </label>
                 <input
                   type="email"
                   class="form-control"
                   placeholder="Enter your email address"
+                  name="email"
+                  value={email}
+                  required
+                  onChange={onChange}
                 />
               </div>
 
               <div class="mb-3">
-                <label for="password" class="form-label">
+                <label htmlFor="password" class="form-label">
                   Password
                 </label>
                 <input
                   type="password"
                   class="form-control"
                   placeholder="Enter your password"
+                  name="password"
+                  value={password}
+                  required
+                  onChange={onChange}
                 />
                 <span className="showPassword">show</span>
-                <Link className="fpass" to="/forgotPassword">Forgot your password?</Link>
+                <Link className="fpass" to="/forgotPassword">
+                  Forgot your password?
+                </Link>
               </div>
-              <button className="my-2" type="submit">Sign In</button>
+              <button className="my-2" type="submit">
+                Sign In
+              </button>
             </form>
             <div className="gosignup">
-              <h5 >
+              <h5>
                 Don't have an account?{" "}
-                <Link className="gsignup"  to="/signup"> SIGN UP </Link>
+                <Link className="gsignup" to="/signup">
+                  {" "}
+                  SIGN UP{" "}
+                </Link>
               </h5>
             </div>
           </div>

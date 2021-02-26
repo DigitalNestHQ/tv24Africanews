@@ -8,23 +8,24 @@
 .subscribe-header {
     color: "i will be right back"
 }
-/* .ban-overlay {
+.cur_crd-wrap {
     position: relative;
-} */
+}
 .sub-banner {
     background-color: #000;
     color: #fff;
     text-align: center;
     height: 263px;
-    /* position: absolute; */
-    /* width: 100%; */
-    /* z-index: 1; */
+    width: 100%;
+    /* margin-bottom: 10px; */
+    /* position: absolute;
+    z-index: 1; */
 }
-
 .sub-banner p {
     font-weight: bold;
     font-size: 36px;
     line-height: 42px;
+    padding-top: 20px;
 }
 
 .pay_plan-wrap {
@@ -34,7 +35,11 @@
     max-width: 1100;
     margin: 0 auto;
     mix-blend-mode: multiply;
- 
+    height: 785px
+    /* position: absolute;
+    top: 70%;
+    z-index: 100;
+    transform: translateX(50, 50); */
 }
 
 .pay_plan-wrap h2 {
@@ -51,7 +56,11 @@
     background: #FFFFFF;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    position: relative;
+    left: 50%;
+    margin-top: 30px;
+    transform: translate(-50%, -50%);
 }
 
 .sub-curency_ngn,
@@ -63,9 +72,11 @@
 
 .sub-curency_ngn {
     color: #018651;
+    padding-left: 15px;
 }
 
 .sub-curency_usd {
+    padding-right: 15px;
     color: #B22234;
 }
 
@@ -103,4 +114,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.trial{
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 7px 20px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FF1717;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+}
+.card-flex{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sub-crd{
+    width: 275px;
+    height: 267px;
 }
