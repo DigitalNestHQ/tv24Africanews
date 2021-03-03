@@ -20,6 +20,10 @@
 .politics-wrap{
     background-color: #D1D1D1;
 }
+.pol-news-card-wrap{
+    max-width: 1440px;;
+    margin: 0 auto;
+}
 .news-sec a{
     text-decoration: none;
     transition: transform 2s ease;

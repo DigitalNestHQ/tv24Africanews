@@ -15,46 +15,58 @@ class TechAfrica extends Component {
           <div className="tech-top-right"></div>
         </div>
         <div className="tech-bottom">
-        <div className="tech-bottom-left">
-        <div className="tech-sq tech-sq-1">
-            <a href="/" className="tch-anchor">
-              <Card className="tech-crd">
-                <Card.Img variant="top" src={Telescope} className="tech-crd-img"/>
-                <Card.Body>
-                  <Card.Text className="tech-crd-caption">
-                    The secret to moving this ancient sphinx screening
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </a>
+          <div className="tech-bottom-left">
+            <div className="tech-sq tech-sq-1">
+              <a href="/" className="tch-anchor">
+                <Card className="tech-crd">
+                  <Card.Img
+                    variant="top"
+                    src={Telescope}
+                    className="tech-crd-img"
+                  />
+                  <Card.Body>
+                    <Card.Text className="tech-crd-caption">
+                      The secret to moving this ancient sphinx screening
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </a>
+            </div>
+            <div className="tech-sq tech-sq-2">
+              <a href="/" className="tch-anchor">
+                <Card className="tech-crd">
+                  <Card.Img
+                    variant="top"
+                    src={Microscope}
+                    className="tech-crd-img"
+                  />
+                  <Card.Body>
+                    <Card.Text className="tech-crd-caption">
+                      How Lab Courses Can Teach More Than Science
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </a>
+            </div>
+            <div className="tech-sq tech-sq-3">
+              <a href="/" className="tch-anchor">
+                <Card className="tech-crd">
+                  <Card.Img
+                    variant="top"
+                    src={Truck}
+                    className="tech-crd-img"
+                  />
+                  <Card.Body>
+                    <Card.Text className="tech-crd-caption">
+                      Elon Musk unveils Tesla's Cybertruck electric off-road
+                      vehicle
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </a>
+            </div>
           </div>
-          <div className="tech-sq tech-sq-2">
-            <a href="/" className="tch-anchor">
-              <Card className="tech-crd">
-                <Card.Img variant="top" src={Microscope} className="tech-crd-img"/>
-                <Card.Body>
-                  <Card.Text className="tech-crd-caption">
-                    How Lab Courses Can Teach More Than Science
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </a>
-          </div>
-          <div className="tech-sq tech-sq-3">
-            <a href="/" className="tch-anchor">
-              <Card className="tech-crd">
-                <Card.Img variant="top" src={Truck} className="tech-crd-img"/>
-                <Card.Body>
-                  <Card.Text className="tech-crd-caption">
-                    Elon Musk unveils Tesla's Cybertruck electric off-road
-                    vehicle
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </a>
-          </div>
-        </div>
-        <div className="tech-top-right left-equiv"></div>
+          <div className="tech-top-right left-equiv"></div>
         </div>
       </div>
     );

@@ -3,6 +3,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import GooglePlayImg from "../../../../assets/images/playstoreimg.png";
 import ApplePlayImg from "../../../../assets/images/apple.jpg";
+import { pageurl } from '../../../../utils/constants'
 import "./footer.css";
 const Footer = () => {
   return (
@@ -33,7 +34,7 @@ const Footer = () => {
             <h3 className="ft-hd-2">categories</h3>
             <ul>
               <li>
-                <a href="/">Contact Us</a>
+                <a href={pageurl.CONTACTUS}>Contact Us</a>
               </li>
               <li>
                 <a href="/">Apps</a>
@@ -62,19 +63,19 @@ const Footer = () => {
             <h3 className="ft-hd-3">company</h3>
             <ul>
               <li>
-                <a href="/">About Us</a>
+                <a href={pageurl.ABOUT}>About Us</a>
               </li>
               <li>
                 <a href="/">Code of Ethics</a>
               </li>
               <li>
-                <a href="/">Terms and Conditions</a>
+                <a href={pageurl.PRIVACYPOLICY}>Terms and Conditions</a>
               </li>
               <li>
-                <a href="/">Privacy Policy</a>
+                <a href={pageurl.PRIVACYPOLICY}>Privacy Policy</a>
               </li>
               <li>
-                <a href="/">Cookie Policy</a>
+                <a href={pageurl.COOKIEPOLICY}>Cookie Policy</a>
               </li>
               <li>
                 <a href="/">Cookie Preferences</a>
@@ -83,7 +84,7 @@ const Footer = () => {
                 <a href="/contact">Community Guidelines</a>
               </li>
               <li>
-                <a href="/works">Work for us</a>
+                <a href={pageurl.CONTACTUS}>Work for us</a>
               </li>
               <li>
                 <a href="/hr">HR quality</a>
@@ -93,10 +94,10 @@ const Footer = () => {
           <div className="col-sm-3">
             <h3 className="ps_p">DOWNLOAD APP</h3>
             <div className="app-store">
-              <a href="/">
+              <a href="/playStore">
                 <img src={GooglePlayImg} alt="google play" />{" "}
               </a>
-              <a href="/">
+              <a href="/applestore">
                 <img src={ApplePlayImg} alt="google play" />{" "}
               </a>
             </div>

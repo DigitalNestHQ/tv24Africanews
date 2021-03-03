@@ -15,7 +15,7 @@ import InsideAfrica from "./dicoverafrica/discoverAfrica";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "../reusables/navigation/Footer/Footer";
-import "./homepage.css"
+import "./homepage.css";
 
 function Homepage() {
   useEffect(() => {
@@ -31,7 +31,7 @@ function Homepage() {
         <Headlines />
         <Business />
         <InsideAfrica />
-        <Tech />
+        {/* <Tech /> */}
         <Sports />
         <Lifestyles />
         <Entertainment />

@@ -1,5 +1,5 @@
 .login{
-    max-width: 1440px;
+    max-width: 1500px!important;
     margin: 0 auto;
     background: linear-gradient(rgba(85, 22, 22, 0.5), rgba(85, 22, 22, 0.5)),
     url("../../assets/images/elephant.jpg")center/cover fixed no-repeat;

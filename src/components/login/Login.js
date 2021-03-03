@@ -15,11 +15,11 @@ const Login = (props) => {
   const { login, error, clearErrors, isAuthenticated } = authContext;
 
   useEffect(() => {
-    if (isAuthenticated) {
-      setTimeout(() => {
-        props.history.push("/category");
-      }, 5000);
-    }
+    // if (isAuthenticated) {
+    //   setTimeout(() => {
+    //     props.history.push("/");
+    //   }, 5000);
+    // }
     if (error) {
       setAlert(error, "danger");
       clearErrors();
@@ -45,8 +45,11 @@ const Login = (props) => {
         password,
       });
       setAlert("login successful", "success");
+      setTimeout(() => {
+            props.history.push("/");
+          }, 4000)
+
     }
-    console.log("Logging in...");
   };
   return (
     <div className="login">

@@ -17,14 +17,14 @@ import {
 
 const AuthState = props => {
     const initialState = {
-        otp: localStorage.getItem("otp"),
+        token: localStorage.getItem("token"),
         isAuthenticated: null,
         loading: true,
         error: null,
         user: null
     }
 
-    const [state, dispatch] = useReducer(authReducer, initialState)  
+    const [state, dispatch] = useReducer(authReducer, initialState);  
     // Register User
     const register = async formData => {
         const config ={
@@ -70,8 +70,8 @@ const AuthState = props => {
     }
     // load user 
     const loadUser = async () => {
-        if(localStorage.otp){
-            setAuthToken(localStorage.otp)
+        if(localStorage.token){
+            setAuthToken(localStorage.token)
         }   
         try {
             const res = await axios.get('http://api.tv24africa.com/api/v1/');

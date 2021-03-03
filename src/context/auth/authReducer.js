@@ -20,8 +20,16 @@ export default (state, action) => {
         loading: false
       }
     case REGISTER_SUCCESS:
+      localStorage.setItem("token", null);
+      return {
+        ...state,
+        ...action.payload,
+        isAuthenticated:false,
+        loading: false,
+        message: action.payload.data.message
+      };
     case LOGIN_SUCCESS:
-      localStorage.setItem("otp", action.payload.data.otp);
+      localStorage.setItem("token", action.payload.token);
       return {
         ...state,
         ...action.payload,
@@ -29,13 +37,15 @@ export default (state, action) => {
         loading: false,
         message: action.payload.data.message
       };
+
     case REGISTER_FAIL:
     case AUTH_ERROR:
     case LOGIN_FAIL:
-      localStorage.removeItem("otp");
+    case LOGOUT:
+      localStorage.removeItem("token");
       return {
         ...state,
-        otp: null,
+        token: null,
         isAuthenticated: false,
         loading: false,
         user: null,

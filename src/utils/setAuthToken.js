@@ -1,10 +1,13 @@
 import axios from "axios";
 
-const setAuthToken = (token) => {
-  if (token) {
-    axios.defaults.headers.common["x-auth-token"] = token;
-  } else {
-    delete axios.defaults.headers.common["x-auth-token"];
+const token = localStorage.getItem("token");
+
+const createRequestInstance = axios.create({
+  baseUrl: "https://api.tv24africa.com/api/v1/",
+  timeout: 5000,
+  headers: {
+    "Authorization" : `Bearer ${token}`
   }
-};
-export default setAuthToken;
+})
+
+export default createRequestInstance;

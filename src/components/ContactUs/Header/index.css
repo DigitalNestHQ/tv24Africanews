@@ -1,0 +1,40 @@
+.contact-header-nav {
+  color: black;
+  background-color: white;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  /* padding-top: 15px; */
+}
+
+.cont_lists{
+  align-self: center;
+  align-content: flex-end;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.cont_lists .nav-links {
+  color: black;
+  border-right: black 1px solid;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.contact-header {
+  background-image: url("./herocontact.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.hero {
+  margin: 0;
+  background-color: rgba(255, 0, 0, 0.3);
+  color: white;
+}
+
+.hero > h1 {
+  padding: 100px;
+  text-align: center;
+}
