@@ -2,7 +2,6 @@ import React, { useEffect, useState, Fragment } from "react";
 import ReactHtmlParser, {
   processNodes,
   convertNodeToElement,
-  htmlparser2,
 } from "react-html-parser";
 import Nav from "../reusables/navigation/Nav/Nav";
 import { useParams, Link } from "react-router-dom";
@@ -70,7 +69,15 @@ const GetNews = () => {
         ) : (
           <div>
             <h2 className="post_title">{news.post_title}</h2>
-            <div>{ReactHtmlParser(html, options)}</div>
+            
+            <img 
+            style={{
+              float: "left",
+              margin:"15px",
+               }}
+             src={`https://api.tv24africa.com/public/storage/post_image/${news.featured_image}`} alt={`post ${news.post_id}`}/>
+            <div className="text-wrap">
+            {ReactHtmlParser(html, options)}</div>
           </div>
         )}
       </div>

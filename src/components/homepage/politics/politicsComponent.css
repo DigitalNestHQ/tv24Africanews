@@ -50,7 +50,7 @@
     width: 272px;
     height: 198px;
 }
-.news-crd label{
+.news-crd span{
     position: absolute;
     top: 15px;
     left: 15px;

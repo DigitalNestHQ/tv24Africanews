@@ -2,7 +2,7 @@ import React, { Component, useEffect, useState } from "react";
 import { useParams} from "react-router-dom";
 import PropTypes from "prop-types";
 import { getNewsFeed } from "../../context/news/NewsApi";
-import NewsCard from "./NewsCard";
+import NewsCard from "../generalNews/NewsCard";
 // import '../sport/sport.css';
 
 class AllNews extends Component {
