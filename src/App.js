@@ -13,6 +13,7 @@ import Subscribe from "./components/subscription/Subscribe";
 import DiscoverAfrica from "./components/DiscoverAfrica/index";
 import ContactUs from "./components/ContactUs/index";
 import NewsFeeds from "./components/generalNews/News";
+import AllNewsFeeds from "./components/homepage/AllNews";
 import Error404 from "./components/error404/Error404";
 
 // states
@@ -39,6 +40,7 @@ function App() {
               <Route exact path={pageurl.ABOUT} component={withRouter(AboutUs)} />
               <Route exact path={pageurl.SPORT} component={Sports} />
               <Route exact path="/post/:slug" component={withRouter(NewsFeeds)} />
+              <Route exact path="/allnews" component={withRouter(AllNewsFeeds)} />
               <Route
                 exact
                 path={pageurl.PRIVACYPOLICY}

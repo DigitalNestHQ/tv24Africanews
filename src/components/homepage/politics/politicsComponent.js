@@ -12,26 +12,15 @@ import PoliticsCard from "./PlotiticsCard"
 import "./politicsComponent.css";
 
 class politicsComponent extends Component {
-  static propTypes = {};
-  state = {
-    feeds: [],
-  };
-  async componentDidMount() {
-    const newsFeeds = await getNewsFeed();
-    this.setState(() => ({
-      feeds: newsFeeds,
-    }));
-  }
-
   render() {
-    const {feeds} = this.state
+    const feeds = this.props.data
     return (
       <div className="politics-wrap container-fluid my-4">
-        <h3>NEWS\TRENDING</h3>
+        <h3>TRENDING</h3>
         <div className="container-fluid my-3 p-2 row  pol-news-card-wrap">
         {
           feeds.length > 0 &&
-          feeds.map((categ) => {
+          feeds.slice(0, 8).map((categ) => {
             const {  post_type, post_title, featured_image, id, slug } = categ;
             return (
               <PoliticsCard
