@@ -20,18 +20,12 @@
 .cap-ancor {
     font-weight: 500;
     background-color: #fff;
-    display: flex;
-    justify-content: flex-start;
-    width: 310px
 }
 
 
 .cap-anco {
     background-color: #fff;
     color: #F83D3D;;
-    border: 1px solid black;
-    position: relative;
-    top: 30px;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -59,27 +53,25 @@
     font-weight: 700;
     font-size: 30px;
     color: #F83D3D;
-    line-height: 35.16px
+    line-height: 35.16px;
+    float: left;
+    clear: both;
 }
 
 .cnt-txt-wrap {
-    position: relative;
-    top: 30%;
-    left: 5%;
     width: 84%;
+    padding: 80px 0 0 20px;
 }
 
 .cnt-txt-wrap p {
-    padding-top: 35px;
     font-family: 'Roboto',sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 21.09px;
-    display: flex;
-    align-items: flex-end;
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 18px
 }
 
 
@@ -126,12 +118,41 @@
 
 }
 
+@media (max-width: 978px) {
+   
+    .cap-ancor {
+        font-weight: 500;
+        background-color: #fff;
+        width: inherit;
+        font-size: 14px;
+    }
+    .caro-capxn p, .caro-capxn a{
+        font-size: 14px;
+        line-height:20px
+    }
+    .carousel-caption{
+        top: 15px;
+    }
+    .cnt-1, .cnt-2{
+        background-attachment: scroll;
+    }
+    .teas-crd-wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        flex-wrap: wrap;    }
+    .ts-card-wrap {
+        margin: 0 auto;
+    }
+}
 @media screen and (max-width: 560px) {
 
     .cnt-2,
     .cnt-1,
     .ct-rt {
         height: 250px;
+        margin: 20px 0;
     }
 }
 

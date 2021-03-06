@@ -45,7 +45,7 @@ const lifestyle = () => {
             <Card className="bg-dark text-white mt-wrap">
               <Card.Img src={Marlian} alt="Card image" className="ent-h-100" />
               <Card.ImgOverlay className="overl">
-                <Card.Text className="">NAIRA MARLEY</Card.Text>
+                <Card.Text>NAIRA MARLEY</Card.Text>
               </Card.ImgOverlay>
               <a href="http://facebook.com">
                 {" "}

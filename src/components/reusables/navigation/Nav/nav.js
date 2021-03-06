@@ -18,7 +18,7 @@ const Navbar = () => {
       <TopNav />
       <header>
         <div className="container-fluid">
-          <nav className="navbar navbar-expand-lg navbar-light navigation py-3 px-1">
+          <nav className="navbar d-print navbar-expand-lg navbar-light navigation py-3 px-1 ">
             <Link
               to={pageurl.HOMEPAGE}
               className="navbar-brand logo"

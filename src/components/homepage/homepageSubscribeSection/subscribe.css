@@ -50,3 +50,24 @@ input::placeholder{
 .sub-inpt-cont{
     align-self: right;
 }
+@media screen and (max-width: 772px){
+    .subscription-wrap {
+        flex-direction: column;
+        flex: 1 0 auto;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .sb-cntrl {
+        width: auto;
+        height: auto;
+    }
+    .sub-btn {
+        width: auto;
+        height: auto;
+    }
+    .sub-logo img {
+        width: 80.66px;
+        height: 80.66px;
+        text-align: center;
+    }
+}

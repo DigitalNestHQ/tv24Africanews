@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, useParams } from "react-router-dom";
+import { BrowserRouter as Router, useParams } from "react-router-dom";
 import Nav from "../reusables/navigation/Nav/Nav";
 import Banner from "./Banner";
 import TeaserSection from "./homepageTeaser/teaserSection";
@@ -30,7 +30,6 @@ function Homepage() {
       getNewsFeed()
         .then((data) => {
           setNews(data);
-          // console.log(data);
         })
         .catch((err) => {
           setError(err);
@@ -41,12 +40,12 @@ function Homepage() {
 
     //eslint-disable-next-line
   }, [slug, setNews]);
-  
+
   return (
-    <Fragment className="aos-init aos-animate home-wrap">
+    <Fragment>
       <Router>
         <Nav />
-        <Banner data={news}/>
+        <Banner data={news} />
         <Politics data={news} />
         <TeaserSection />
         <Headlines />

@@ -18,7 +18,7 @@ const politicsCard = ({ post_title, featured_image, id, post_type, slug }) => {
             className="news-card-img"
           />
           <Card.Body>
-            <Card.Text className="news-card-caption">{post_title}</Card.Text>
+            <Card.Text className="news-card-caption">{post_title.toLowerCase()}</Card.Text>
           </Card.Body>
         </Card>
       </a>

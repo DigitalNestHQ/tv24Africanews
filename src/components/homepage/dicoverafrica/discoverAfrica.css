@@ -54,8 +54,8 @@
     color:#fff;
     font-style: italic;
     font-weight: 500;
-    font-size: 96px;
-    line-height: 112px;
+    font-size: 56px;
+    line-height: 92px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
     0px 4px 4px rgba(0, 0, 0, 0.25),
     0px 4px 4px rgba(0, 0, 0, 0.25),
@@ -121,19 +121,20 @@ line-height: 16px;
     line-height: 21px;
 }
 
-@media screen and (max-width: 560px){
+@media screen and (max-width: 772px){
     .africa h3{
         padding-left: 0;
         text-align: center;
+        font-size: 24px;
     } 
     .af-card-overl{
         top: 20px;
     }
     .af-col-tp-bg p{
-        padding-left: 0;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 46px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .af-col-tp{
+        background-attachment: scroll;
     }
 }

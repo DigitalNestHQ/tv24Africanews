@@ -33,9 +33,7 @@ class politicsComponent extends Component {
               />
             );
           })
-        }
-
-         
+        } 
         </div> 
       </div>
     );

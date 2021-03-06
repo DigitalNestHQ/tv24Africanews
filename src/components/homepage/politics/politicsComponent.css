@@ -69,6 +69,7 @@
     color: #000000;
     line-height:28.13px;
     font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
 }
 @media screen and (max-width: 772px){
     .politics-wrap h3{

@@ -4,9 +4,11 @@ import ReactHtmlParser, {
   convertNodeToElement,
 } from "react-html-parser";
 import Nav from "../reusables/navigation/Nav/Nav";
-import { useParams, Link } from "react-router-dom";
+import Footer from "../reusables/navigation/Footer/Footer";
+import { useParams } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import { getSingleNews } from "../../context/news/NewsApi";
+import Loader from "../loader/Loader";
 import "./allNews.css";
 
 function transform(node, index) {
@@ -41,46 +43,60 @@ const options = {
   transform,
 };
 const GetNews = () => {
-  const [news, setNews] = useState([]);
-  const [error, setError] = useState(null);
+  const [news, setNews] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
   const { slug } = useParams();
 
   useEffect(() => {
-    getSingleNews(slug)
-      .then((data) => {
-        const [newsData] = data;
-        setNews(newsData);
-      })
-      .catch((err) => {
-        setError(err);
-        console.log(err);
-      });
-
-    //eslint-disable-next-line
-  }, [slug, setNews]);
-  const html = `<div>${news.post_description}</div>`;
-
+    let subscribe = true;
+    if (subscribe) {
+      const getThisNews = () => {
+        try {
+          getSingleNews(slug).then((res) => {
+            setNews(res[0]);
+            setLoading(false);
+          });
+        } catch (error) {
+          if (error) {
+            setError(error.message);
+            console.log(error);
+          }
+        }
+      };
+      getThisNews();
+    }
+    return () => (subscribe = null);
+  }, []);
+  let html;
+  console.log(news);
+  if (news) {
+    html = `<div>${news.post_description}</div>`;
+ 
+  }
+  if (loading) {
+    return <div>
+      <Loader />;
+    </div>
+  }
   return (
-    <Fragment className="news-endpnt-wrap">
+    <Fragment>
       <Nav />
+
       <div className="container news">
-        {error ? (
-          <Link href="/">go Home</Link>
-        ) : (
-          <div>
-            <h2 className="post_title">{news.post_title}</h2>
-            
-            <img 
-            style={{
-              float: "left",
-              margin:"15px",
-               }}
-             src={`https://api.tv24africa.com/public/storage/post_image/${news.featured_image}`} alt={`post ${news.post_id}`}/>
-            <div className="text-wrap">
-            {ReactHtmlParser(html, options)}</div>
-          </div>
-        )}
+        <h2 className="post_title">{news.post_title}</h2>
+        <img
+          style={{
+            float: "left",
+            margin: "15px",
+          }}
+          className="post_img"
+          src={`https://api.tv24africa.com/public/storage/post_image/${news.featured_image}`}
+          alt="news"
+        />
+        <div className="text-wrap">{ReactHtmlParser(html, options)}</div>
       </div>
+      <Footer />
     </Fragment>
   );
 };
