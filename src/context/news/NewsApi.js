@@ -19,10 +19,10 @@ export const getSportNews = async () => {
   }
 };
 
-export const getCategories = async () => {
+export const getCategories = async (category) => {
   try {
     const categories = await axios.get(
-      "https://api.tv24africa.com/api/v1/getcategories",
+      `https://api.tv24africa.com/api/v1/categories?category=${category}`,
       config
     );
     const { data } = categories;

@@ -1,13 +1,9 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
-  Route,
   Link,
-  withRouter,
 } from "react-router-dom";
 import logo from "../../../../assets/images/TV24Ergb.png";
 import { pageurl } from "../../../../utils/constants";
-import { NavLink } from "react-router-dom";
 import TopNav from "../../topnav";
 import "./nav.css";
 import "../../header.css";
@@ -41,59 +37,59 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="collapsibleNavId">
               <ul className="navbar-nav ml-auto mt-2 mt-lg-0 nav-mn">
                 <li className="nav-item">
-                  <NavLink
+                  <Link
                     className="nav-link ml-lg-3"
-                    activeClassName="activeLink"
+                    activeclassname="activeLink"
                     exact
                     to={pageurl.HOMEPAGE}
                   >
                     HOME
-                  </NavLink>
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <a
                     className="nav-link ml-lg-3"
-                    activeClassName="activeLink"
+                    activeclassname="activeLink"
                     href={pageurl.DISCOVERAFRICA}
                   >
                     DISCOVER AREA
                   </a>
                 </li>
                 <li className="nav-item">
-                  <NavLink
+                  <Link
                     className="nav-link ml-lg-3"
-                    activeClassName="activeLink"
+                    activeclassname="activeLink"
                     to={pageurl.GOVERNANCE}
                   >
                     POLITICS/GOVERNAANCE
-                  </NavLink>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <NavLink
+                  <Link
                     className="nav-link ml-lg-3"
-                    activeClassName="activeLink"
+                    activeclassname="activeLink"
                     to={pageurl.BUSINESS}
                   >
                     BUSINESS
-                  </NavLink>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <NavLink
+                  <Link
                     className="nav-link ml-lg-3"
-                    activeClassName="activeLink"
+                    activeclassname="activeLink"
                     to={pageurl.ENTERTAINMENT}
                   >
                     ENTERTAINMENT
-                  </NavLink>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <NavLink
+                  <Link
                     className="nav-link ml-lg-3"
-                    activeClassName="activeLink"
+                    activeclassname="activeLink"
                     to={pageurl.LIFESTYLE}
                   >
                     LIFESTYLE
-                  </NavLink>
+                  </Link>
                 </li>
               </ul>
               <ul className="navbar-nav ml-auto mt-2 mt-lg-0 nav-sub-i">

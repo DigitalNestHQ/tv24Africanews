@@ -43,21 +43,19 @@ function Homepage() {
 
   return (
     <Fragment>
-      <Router>
-        <Nav />
-        <Banner data={news} />
-        <Politics data={news} />
-        <TeaserSection />
-        <Headlines />
-        <Business />
-        <InsideAfrica />
-        {/* <Tech /> */}
-        <Sports />
-        <Lifestyles />
-        <Entertainment />
-        <SubscribeForm />
-        <Footer />
-      </Router>
+      <Nav />
+      <Banner data={news} />
+      <Politics data={news} />
+      <TeaserSection data={news} />
+      <Headlines />
+      <Business />
+      <InsideAfrica />
+      {/* <Tech /> */}
+      <Sports />
+      <Lifestyles />
+      <Entertainment />
+      <SubscribeForm />
+      <Footer />
     </Fragment>
   );
 }

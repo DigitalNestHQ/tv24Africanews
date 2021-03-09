@@ -49,7 +49,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.caro-capxn a {
+.caro-capxn a, .caro-capxn button{
     font-weight: 700;
     font-size: 30px;
     color: #F83D3D;
@@ -60,7 +60,7 @@
 
 .cnt-txt-wrap {
     width: 84%;
-    padding: 80px 0 0 20px;
+    padding: 40px 0 0 20px;
 }
 
 .cnt-txt-wrap p {
@@ -168,7 +168,7 @@
 .butn {
     background: #fff;
     color: #F83D3D;
-    padding: 0 10px;
+    padding: 5px 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -205,7 +205,7 @@
 }
 
 .h-100:hover {
-    transform: scale(0.8);
+    /* transform: scale(0.8); */
     cursor: pointer;
 }
 
@@ -225,18 +225,22 @@
 
 .ts-card-txt {
     font-family: 'Roboto', sans-serif;
-    margin-top: 20px;
-    font-size: 11px !important;
+    /* margin-top: 20px; */
+    font-size: 17px !important;
     font-style: normal;
-    font-weight: 700;
-    line-height: 13px;
+    font-weight: 600;
+    line-height: 10px;
     letter-spacing: 0em;
     text-align: left;
+    text-transform: capitalize;
 }
 
 @media screen and (max-width: 560px) {
 
     .ts-overlay {
         padding-top: 140px;
+    }
+    .caro-item {
+        height: 250px;
     }
 }

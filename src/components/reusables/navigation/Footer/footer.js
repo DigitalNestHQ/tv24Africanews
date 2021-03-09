@@ -1,5 +1,4 @@
 import React from "react";
-// import { pageurl } from "../../../utils/constants";
 import { Card } from "react-bootstrap";
 import GooglePlayImg from "../../../../assets/images/playstoreimg.png";
 import ApplePlayImg from "../../../../assets/images/apple.jpg";
