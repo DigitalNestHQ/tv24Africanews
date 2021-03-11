@@ -1,25 +1,19 @@
 import React, { Fragment } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import Nav from "../reusables/navigation/Nav/Nav";
 import { Card, Button } from "react-bootstrap";
 import Image3 from "../../assets/images/calabar-carnival-3.jpg";
 import Image4 from "../../assets/images/travel1.jpg";
-import Trump from "../../assets/images/trump1.jpg";
-import logo from "../../assets/images/TV24E.png";
-import { BrowserRouter as Link } from "react-router-dom";
-import { pageurl } from "../../utils/constants";
-import { NavLink } from "react-router-dom";
+// import Trump from "../../assets/images/trump1.jpg";
+// import logo from "../../assets/images/TV24E.png";
+// import { Link } from "react-router-dom";
 import Footer from "../reusables/navigation/Footer/Footer";
-// import "../homepage/homepage.css";
 import "./about.css";
 
 const AboutComponent = (props) => {
   return (
     <Fragment>
-      <Router>
         <Nav />
         <div className="about">
-          {/* <Nav className="default" /> */}
           <div className="bg-header">
             <p className="about-txt">ABOUT TV24 AFRICA NEWSPAPER</p>
           </div>
@@ -123,7 +117,6 @@ const AboutComponent = (props) => {
           </div>
         </div>
         <Footer />
-      </Router>
     </Fragment>
   );
 };

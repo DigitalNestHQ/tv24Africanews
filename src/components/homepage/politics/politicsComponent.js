@@ -5,7 +5,7 @@ import "./politicsComponent.css";
 class politicsComponent extends Component {
   render() {
     const feeds = this.props.data;
-    console.log(feeds)
+    // console.log(feeds)
     return (
       <div className="politics-wrap container-fluid my-4">
         <h3>TRENDING</h3>

@@ -69,7 +69,6 @@ const GetNews = () => {
     return () => (subscribe = null);
   }, []);
   let html;
-  console.log(news);
   if (news) {
     html = `<div>${news.post_description}</div>`;
  

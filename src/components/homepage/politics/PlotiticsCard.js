@@ -1,7 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { useHistory } from "react-router";
 
 const PoliticsCard = ({
   post_title,
@@ -11,7 +10,7 @@ const PoliticsCard = ({
   slug,
   category_id,
 }) => {
-  console.log(category_id);
+  // console.log(category_id);
   return (
     <div className="col-sm-3 news-sec my-2 mx-auto">
       <Card className="news-crd">
@@ -31,7 +30,7 @@ const PoliticsCard = ({
           </button>
         </Link>
         <Card.Body>
-          <Link href={`/post/${slug}`}>
+          <Link to={`/post/${slug}`}>
             <Card.Text className="news-card-caption">
               {post_title.toLowerCase()}
             </Card.Text>

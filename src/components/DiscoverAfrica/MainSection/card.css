@@ -37,35 +37,58 @@
   font-weight: 700;
   font-family: Roboto;
   line-height: 42.19px;
-  font-size: 30px;
+  font-size: 25px;
   text-align: left;
   vertical-align: bottom;
   padding: 0;
   margin: 0;
   justify-content: flex-start;
+  text-transform: capitalize;
 }
 
 .card-caption-content {
   color: #000000;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 25px;
   text-align: justify;
+  text-transform: capitalize;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 560px) {
   .card-caption-title {
     line-height: 25px;
     font-size: 20px;
   }
-
+  .main-section-card{
+    display: block;
+    height: auto;
+  }
+  .image{
+    width: 100%;
+    padding: 10px;
+  }
+  .image img{
+    width: 310px;
+    display: inline-block;
+    margin: 0 auto;
+  }
   .card-caption-content {
     font-size: 12px;
     line-height: 16px;
+  }
+  .main-section-card > div {
+    width: 100%;
   }
 }
 .main-section-card{
   margin-top: 10px!important;
   margin-bottom: 10px!important;
+}
+
+.card-caption-content span{
+  color:#f03730;
+  font-size: 17px;
+  text-transform: capitalize;
 }

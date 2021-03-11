@@ -1,11 +1,11 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { BrowserRouter as Router, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Nav from "../reusables/navigation/Nav/Nav";
 import Banner from "./Banner";
 import TeaserSection from "./homepageTeaser/teaserSection";
 import SubscribeForm from "./homepageSubscribeSection/subscribe";
 import Politics from "./politics/politicsComponent";
-import Headlines from "./headlines/headlineComponent";
+import Headlines from "./headlines/HeadlineComponent";
 import Lifestyles from "./lifestyle/lifestyleComponent";
 import Entertainment from "./entertainment/entertainmentComponent";
 import { getNewsFeed } from "../../context/news/NewsApi";
@@ -47,13 +47,13 @@ function Homepage() {
       <Banner data={news} />
       <Politics data={news} />
       <TeaserSection data={news} />
-      <Headlines />
-      <Business />
+      <Headlines data={news}/>
+      <Business data={news} />
       <InsideAfrica />
       {/* <Tech /> */}
-      <Sports />
-      <Lifestyles />
-      <Entertainment />
+      <Sports data={news}/>
+      <Lifestyles data={news}/>
+      <Entertainment data={news}/>
       <SubscribeForm />
       <Footer />
     </Fragment>

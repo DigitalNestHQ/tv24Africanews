@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import { Carousel } from "react-bootstrap";
-import { Link, withRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./homepage.css";
 
 class Banner extends Component {
   render() {
-    const { history } = this.props;
     const feeds = this.props.data;
     const firstFeed = Array.isArray(feeds) && feeds.length ? feeds[0] : {};
-    const secondFeed = Array.isArray(feeds) && feeds.length ? feeds[1] : {};
+    const secondFeed = Array.isArray(feeds) && feeds.length ? feeds[8] : {};
 
     return (
       <div className="container-fluid flex-container banner">
@@ -35,11 +34,11 @@ class Banner extends Component {
                           {category_id}
                         </button>
                       </Link>
-                      <a href={`/post/${slug}`}>
+                      <Link href={`/post/${slug}`}>
                         <p className="text-white text-left car-p text-capitalize">
                           {slug.toLowerCase()}
                         </p>
-                      </a>
+                      </Link>
                     </Carousel.Caption>
                   </Carousel.Item>
                 );
@@ -60,7 +59,7 @@ class Banner extends Component {
                     {firstFeed.category_id}
                   </button>
                 </Link>
-                <Link href={`/post/${firstFeed.slug}`}>
+                <Link to={`/post/${firstFeed.slug}`}>
                   <p className="text-capitalize pb-4">{firstFeed.slug}</p>
                 </Link>
               </div>
@@ -78,7 +77,7 @@ class Banner extends Component {
                   {secondFeed.category_id}
                 </button>
               </Link>
-              <Link href={`/post/${secondFeed.slug}`} className="slug">
+              <Link to={`/post/${secondFeed.slug}`} className="slug">
                 <p className="text-capitalize pb-3">{secondFeed.post_title}</p>
               </Link>
             </div>
@@ -89,4 +88,4 @@ class Banner extends Component {
   }
 }
 
-export default withRouter(Banner);
+export default Banner;

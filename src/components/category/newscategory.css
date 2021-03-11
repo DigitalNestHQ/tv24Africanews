@@ -1,26 +1,4 @@
-.q-categ{
-    padding-top: 50px;
-    padding-bottom: 40px;
-}
+
 .text-title{
-    padding-top: 180px;
-}
-.category-news-card{
-    width: 200px;
-    height: 300px;
-    margin: 5px 70px;
-}
-.news-card-caption{
-    padding-left: 10px;
-}
-.news-categ-link{
-    padding-left: 10px!important;
-}
-@media screen and (min-width: 570px){
-    .q-categ{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
+    padding-top: 60px;
 }
