@@ -11,7 +11,7 @@ class Banner extends Component {
 
     return (
       <div className="container-fluid flex-container banner">
-        <div className="col-sm-8 py-4 carousel-ct">
+        <div className="col-sm-8 py-3 carousel-ct">
           <Carousel slide={false} fade={false} className="mt-3 carosel">
             {feeds &&
               feeds.slice(0, 3).map((categ) => {
@@ -19,7 +19,7 @@ class Banner extends Component {
                 return (
                   <Carousel.Item className="caro-item" key={id}>
                     <img
-                      className="d-block w-100"
+                      className="d-block"
                       src={`https://api.tv24africa.com/public/storage/post_image/${featured_image}`}
                       alt="First slide"
                     />
@@ -78,7 +78,7 @@ class Banner extends Component {
                 </button>
               </Link>
               <Link to={`/post/${secondFeed.slug}`} className="slug">
-                <p className="text-capitalize pb-3">{secondFeed.post_title}</p>
+                <p className="text-capitalize pb-4">{secondFeed.post_title}</p>
               </Link>
             </div>
           </div>

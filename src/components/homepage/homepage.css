@@ -1,7 +1,13 @@
 .banner {
     font-family: 'Roboto', sans-serif;
 }
-
+button{
+    border:none;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
 .cnt-1 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
         url("../../assets/images/endsars.jpg")top/cover fixed no-repeat;
@@ -29,7 +35,7 @@
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 18px;
 }
 
 .flex-container {
@@ -45,33 +51,109 @@
     font-weight: 400!important;
     line-height: 28.13px;
     padding-top: 10px;
-    font-size: 24px;
+    font-size: 22px;
     font-family: 'Roboto', sans-serif;
 }
 
-.caro-capxn a, .caro-capxn button{
+.caro-capxn button{
     font-weight: 700;
-    font-size: 30px;
+    font-size: 26px;
     color: #F83D3D;
-    line-height: 35.16px;
+    border: none;
+    line-height: 29.16px;
     float: left;
     clear: both;
 }
 
+.caro-capxn a{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35.16px;
+    float: left;
+    clear: both;
+    text-decoration: none;
+}
+.caro-capxn a:hover{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35.16px;
+    float: left;
+    clear: both;
+    text-decoration: none;
+    color:#F08080; 
+}
+@media screen and (max-width: 650px) {
+    .pb-4, .py-4 {
+        padding-bottom: 0rem!important;
+        
+    }
+    .pt-4, .py-4 {
+        padding-top: 0rem!important;
+    }
+    .carousel-caption{
+        top: 40% !important;
+    }
+    .caro-capxn p {
+        width: 90%;
+        font-weight: 400!important;
+        line-height: 28.13px;
+        padding-top: 10px;
+        font-size: 22px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .caro-capxn button{
+        font-weight: 700;
+        font-size: 18px;
+        color: #F83D3D;
+        border: none;
+        line-height: 15.16px;
+        float: left;
+        clear: both;
+    }
+    
+    .caro-capxn a{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35.16px;
+        float: left;
+        clear: both;
+        text-decoration: none;
+    }  
+    .butn {
+        background: #fff;
+        color: #F83D3D;
+        padding: 5px 10px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+    
+    }
+}
 .cnt-txt-wrap {
     width: 84%;
     padding: 40px 0 0 20px;
+}
+
+.cnt-txt-wrap a{
+    color:#FFFFFF;
+    text-decoration: none;
 }
 
 .cnt-txt-wrap p {
     font-family: 'Roboto',sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 21.09px;
+    font-size: 16px;
+    line-height: 19.09px;
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-top: 18px
+    padding-top: 10px;
 }
 
 
@@ -109,15 +191,14 @@
     }
 
     .cnt-2{
-        height: 200px;
+        height: 214px;
         margin-top: 22px;
     }
     .cnt-1 {
-        height: 228px;
+        height: 214px;
     }
 
 }
-
 @media (max-width: 978px) {
    
     .cap-ancor {
@@ -131,7 +212,7 @@
         line-height:20px
     }
     .carousel-caption{
-        top: 15px;
+        top: 50%;
     }
     .cnt-1, .cnt-2{
         background-attachment: scroll;
@@ -162,9 +243,6 @@
     padding-top: 40px;
     padding-bottom: 30px;
 }
-
-
-
 .butn {
     background: #fff;
     color: #F83D3D;
@@ -201,7 +279,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
 }
 
 .h-100:hover {
@@ -214,13 +291,12 @@
 }
 
 .ts-card-wrap {
-    width: 293px;
-    height: 334px;
+    height: 280px;
     border: none !important;
 }
 
 .ts-overlay {
-    padding-top: 200px;
+    top: 40%;
 }
 
 .ts-card-txt {
@@ -228,7 +304,7 @@
     /* margin-top: 20px; */
     font-size: 17px !important;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 200;
     line-height: 10px;
     letter-spacing: 0em;
     text-align: left;
@@ -236,11 +312,11 @@
 }
 
 @media screen and (max-width: 560px) {
-
-    .ts-overlay {
-        padding-top: 140px;
-    }
     .caro-item {
         height: 250px;
     }
 }
+.card {
+    background-color: inherit;
+}
+    

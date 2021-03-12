@@ -5,7 +5,7 @@ import { useHistory } from "react-router";
 const TeaserCard = ({ featured_image, id, slug, category_id }) => {
   const history = useHistory();
   return (
-    <div className="col-sm-3 my-2 ts-card-wrap" data-aos="fade-right">
+    <div className="col-lg-3 col-sm-12 my-2 ts-card-wrap" data-aos="fade-right">
       <Link to={`/post/${slug}`}>
       <Card className="text-white mt-wrap h-100">
         <Card.Img
