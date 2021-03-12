@@ -12,31 +12,11 @@ const PoliticsCard = ({
 }) => {
   // console.log(category_id);
   return (
-    <div className="col-sm-3 news-sec my-2 mx-auto">
-      <Card className="news-crd">
-        {post_type === "premium" ? <span>{post_type}</span> : null}
-        <Link
-          to={{
-            pathname: "/news/categories",
-            search: `?category=${category_id}`,
-          }}
-        >
-          <button>
-            <Card.Img
-              variant="top"
-              src={`https://api.tv24africa.com/public/storage/post_image/${featured_image}`}
-              className="news-card-img"
-            />
-          </button>
-        </Link>
-        <Card.Body>
-          <Link to={`/post/${slug}`}>
-            <Card.Text className="news-card-caption">
-              {post_title.toLowerCase()}
-            </Card.Text>
-          </Link>
-        </Card.Body>
-      </Card>
+    <div className="card sec-2 col-lg-3 col-sm-12 my-2 mx-auto">
+      <img src={`https://api.tv24africa.com/public/storage/post_image/${featured_image}`}></img>
+      <Link to={`/post/:${slug}`}>
+          <p>{post_title.toLowerCase()}</p>
+      </Link>
     </div>
   );
 };
