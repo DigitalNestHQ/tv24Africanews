@@ -1,4 +1,6 @@
 import React, { useEffect, useState, Fragment } from "react";
+import CommentForm from "./CommentForm";
+import ShareNews from "./ShareNews";
 import ReactHtmlParser, {
   processNodes,
   convertNodeToElement,
@@ -71,12 +73,13 @@ const GetNews = () => {
   let html;
   if (news) {
     html = `<div>${news.post_description}</div>`;
- 
   }
   if (loading) {
-    return <div>
-      <Loader />;
-    </div>
+    return (
+      <div>
+        <Loader />;
+      </div>
+    );
   }
   return (
     <Fragment>
@@ -94,6 +97,8 @@ const GetNews = () => {
           alt="news"
         />
         <div className="text-wrap">{ReactHtmlParser(html, options)}</div>
+        <CommentForm />
+        <ShareNews />
       </div>
       <Footer />
     </Fragment>

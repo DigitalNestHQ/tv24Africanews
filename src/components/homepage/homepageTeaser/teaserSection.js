@@ -16,7 +16,7 @@ const TeaserSection = (props) => {
     >
       <div className="row container-fluid mx-auto teas-crd-wrap">
         {teasers.length > 0 &&
-          teasers.slice(0, 4).map((teaser) => {
+          teasers.slice(7,11).map((teaser) => {
             const { featured_image, id, slug, category_id } = teaser;
             return (
               <TeaserCard

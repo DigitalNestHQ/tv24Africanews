@@ -34,7 +34,7 @@ class Banner extends Component {
                           {category_id}
                         </button>
                       </Link>
-                      <Link href={`/post/${slug}`}>
+                      <Link to={`/post/${slug}`}>
                         <p className="text-white text-left car-p text-capitalize">
                           {slug.toLowerCase()}
                         </p>
