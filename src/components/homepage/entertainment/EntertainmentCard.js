@@ -8,7 +8,7 @@ const EntertainmentCard = ({
   post_title,
 }) => {
   return (
-    <div className="col-sm-3 my-2 mg-sm-scr">
+    <div className="col-lg-3 col-sm-12 my-2 mg-sm-scr">
       <Card className="bg-dark text-white mt-wrap">
         <Card.Img
           src={`https://api.tv24africa.com/public/storage/post_image/${featured_image}`}

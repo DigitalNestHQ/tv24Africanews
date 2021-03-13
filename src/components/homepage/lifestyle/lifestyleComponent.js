@@ -6,7 +6,7 @@ class Lifestyle extends Component {
   render() {
     const lifeStyles = this.props.data
     return (
-      <div className="lifestyle mt-3 mb-3 pt-3 pb-3">
+      <div className="lifestyle mt-3 mb-3 pt-3">
         <h3 className="text-center py-2 text-white">LIFESTYLES</h3>
         <div className="container-fluid">
           <div className="container-fluid row mx-auto lf-wrap bg-white">
