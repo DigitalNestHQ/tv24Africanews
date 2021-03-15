@@ -4,15 +4,15 @@ import "./sport.css";
 
 export class SportComponent extends Component {
   render() {
-    const sportNews = this.props.data.filter(
-      (news) => news.category_id === "Sport"
-    );
+      const sportNews = this.props.data && this.props.data.filter(
+        (news) => news.category_id === "Sport"
+      );
     return (
       <div className="sport">
         <div className="container-fluid shadow-sm">
           <h3>SPORTS </h3>
           <div className="container-fluid mt-3 mb-3 py-2 d-flex row sport-card-wrap">
-            {sportNews.length > 0 &&
+            {sportNews && sportNews.length > 0 &&
               sportNews.map((news) => {
                 const {
                   post_title,

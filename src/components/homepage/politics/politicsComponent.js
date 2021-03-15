@@ -10,7 +10,7 @@ class politicsComponent extends Component {
       <div className="politics-wrap container-fluid my-4">
         <h3>TRENDING</h3>
         <div className="container-fluid my-3 p-2 row  pol-news-card-wrap">
-          {feeds.length > 0 &&
+          {feeds && feeds.length > 0 &&
             feeds.slice(0, 8).map((categ) => {
               const {
                 post_type,

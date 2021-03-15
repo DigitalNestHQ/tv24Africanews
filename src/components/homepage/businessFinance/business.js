@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 class Business extends Component {
   render() {
     AOS.init();
-    const businessNews = this.props.data.filter(
+    const businessNews = this.props.data && this.props.data.filter(
       (bn) => bn.category_id === "Business News"
     );
     // console.log(businessNews);
@@ -32,7 +32,7 @@ class Business extends Component {
             data-aos-delay="100"
             data-aos-duration="1500"
           >
-            {businessNews.length &&
+            { businessNews && businessNews.length &&
               businessNews.slice(0, 3).map((news) => {
                 const {
                   post_title,
