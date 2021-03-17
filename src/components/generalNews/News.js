@@ -81,25 +81,25 @@ const GetNews = () => {
       </div>
     );
   }
+
   return (
     <Fragment>
       <Nav />
-
-      <div className="container news">
-        <h2 className="post_title">{news.post_title}</h2>
-        <img
-          style={{
-            float: "left",
-            margin: "15px",
-          }}
-          className="post_img"
-          src={`https://api.tv24africa.com/public/storage/post_image/${news.featured_image}`}
-          alt="news"
-        />
-        <div className="text-wrap">{ReactHtmlParser(html, options)}</div>
-        <CommentForm />
-        <ShareNews />
-      </div>
+        <div className="container news">
+          <h2 className="post_title">{news.post_title}</h2>
+          <img
+            style={{
+              float: "left",
+              margin: "15px",
+            }}
+            className="post_img"
+            src={`https://api.tv24africa.com/public/storage/post_image/${news.featured_image}`}
+            alt="news"
+          />
+          <div className="text-wrap">{ReactHtmlParser(html, options)}</div>
+          <CommentForm />
+          <ShareNews />
+        </div>
       <Footer />
     </Fragment>
   );
