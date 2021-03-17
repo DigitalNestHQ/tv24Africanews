@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     font-family: 'Roboto', sans-serif;
+    padding: 0px 17px;
 }
 
 .sb-cntrl {
@@ -18,7 +19,7 @@
 
 input::placeholder{
     color:#fff!important;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 28px;
 }
 
@@ -51,7 +52,7 @@ input::placeholder{
 }
 
 .sub-logo img {
-    width: 183.66px;
+    width: 183.66px !important;
     height: 170.92px;
     transform: rotate(33.83deg);
 }
@@ -68,6 +69,10 @@ input::placeholder{
         max-width: 95%;
         margin: 0 auto;
     }
+    .sub-inpt-cont .input-group {
+        width: 107% !important;
+    }
+
     .sb-cntrl {
         width: auto;
         height: auto;
@@ -77,8 +82,11 @@ input::placeholder{
         height: auto;
     }
     .sub-logo img {
-        width: 80.66px;
-        height: 80.66px;
-        text-align: center;
+        width: 200.66px !important;
+        height: 150.66px;
+        /* text-align: center; */
+        margin: 0 auto;
+        display: block;
+
     }
 }

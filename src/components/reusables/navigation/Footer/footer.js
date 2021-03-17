@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="footer-wrapper container-fluid">
       <footer className="footer">
         <div className="row ft-mob">
-          <div className="col-sm-3 ">
+          <div className="col-sm-3">
             <h3 className="ft-hd-1">About</h3>
             <p>
               TV24 Africa Newspaper is Africa’s top online publication

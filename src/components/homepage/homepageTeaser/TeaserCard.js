@@ -3,7 +3,7 @@ import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 const TeaserCard = ({ featured_image, id, slug, category_id }) => {
   return (
-    <div className="col-sm-3 my-2 ts-card-wrap" data-aos="fade-right">
+    <div className="col-12 col-md-12 col-lg-3 mb-3 b-sm-2 ts-card-wrap" data-as="fade-right">
       <Link
         to={{
           pathname: "/news/categories",
@@ -16,7 +16,7 @@ const TeaserCard = ({ featured_image, id, slug, category_id }) => {
             alt="Card image"
             className="h-100"
           />
-          <Card.ImgOverlay className="m-t text-center ts-overlay">
+          <Card.ImgOverlay className="m-t text-center d-flex justify-content-end flex-column align-items-center ts-oerlay" style={{height: "100%",background: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)"}}>
             <Button variant="outline-danger" className="butn">
               {category_id}
             </Button>

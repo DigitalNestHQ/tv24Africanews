@@ -6,7 +6,7 @@ import TeaserSection from "./homepageTeaser/TeaserSection";
 import SubscribeForm from "./homepageSubscribeSection/Subscribe";
 import Politics from "./politics/PoliticsComponent";
 import Headlines from "./headlines/HeadlineComponent";
-import Lifestyles from "./lifestyle/LifestyleComponent";
+import Lifestyles from "./lifestyle/LlifestyleComponent";
 import Entertainment from "./entertainment/EntertainmentComponent";
 import { getNewsFeed } from "../../context/news/NewsApi";
 import Business from "./businessFinance/Business";
