@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const SportCard = ({ post_title, featured_image, slug, category_id }) => {
   return (
-    <div className="col-sm-3 sport-sec">
+    <div className="col-lg-3 col-sm-12 sport-sec">
       <Card className="sport-crd">
         <Link
           to={{

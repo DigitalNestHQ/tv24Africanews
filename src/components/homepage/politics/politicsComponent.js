@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PoliticsCard from "./PlotiticsCard";
+import PoliticsCard from "./PoliticsCard";
 import "./politicsComponent.css";
 
 class politicsComponent extends Component {
