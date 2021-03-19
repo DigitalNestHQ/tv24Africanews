@@ -1,3 +1,12 @@
+.discover-cont{
+  display: flex;
+  justify-content: center;
+  margin-right: 100px;
+  margin-left: 100px;
+  position: relative;
+  bottom: 40px;
+
+}
 .main-section-card {
   display: flex;
   box-sizing: border-box;
@@ -56,7 +65,8 @@
   text-transform: capitalize;
 }
 
-@media screen and (max-width: 560px) {
+/* @media screen and (max-width: 560px) { */
+@media screen and (max-width: 1200px) {
   .card-caption-title {
     line-height: 25px;
     font-size: 20px;

@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import authContext from "../../context/auth/authContext";
 import "./header.css";
 
-function topNav(props) {
+function TopNav(props) {
+  const userContext = useContext(authContext)
+  const { user } = userContext;
+  console.log(user)
+
   const getDate = () => {
     const date = new Date();
     const month = date.getMonth() + 1;
@@ -49,7 +54,10 @@ function topNav(props) {
     <div className="top-nav">
       <p className="text-white name-sp" style={{ marginBottom: "0px" }}>
         {" "}
-        <span>Welcome Adeola Konga</span> <span>{getDate()}</span>{" "}
+        {
+          user && <><span>Welcome {user.firstname} {user.lastname}</span> <span>{getDate()}</span></>
+        }
+        {" "}
       </p>
       <ul className="soc-nav" style={{ marginBottom: "0px" }}>
         <li>
@@ -77,4 +85,4 @@ function topNav(props) {
   );
 }
 
-export default topNav;
+export default TopNav;

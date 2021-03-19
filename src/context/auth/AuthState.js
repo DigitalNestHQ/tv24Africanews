@@ -61,6 +61,7 @@ const AuthState = props => {
                 payload: res.data
             })
             console.log(res.data);
+            console.log(state)
          } catch (error) {
             dispatch({
                 type: LOGIN_FAIL,
@@ -69,17 +70,20 @@ const AuthState = props => {
         }
     }
     // load user 
-    const loadUser = async () => {
+    const loadUser = async () => { // enpoint now found
+        console.log('called')
         if(localStorage.token){
             setAuthToken(localStorage.token)
         }   
         try {
             const res = await axios.get('http://api.tv24africa.com/api/v1/');
+            console.log('loaduser', res)
             dispatch({
                 type: USER_LOADED,
                 payload: res.data,
             })
         } catch (err) {
+            console.log(err) // throwing error 404
             dispatch({
                 type: AUTH_ERROR,
                 payload: err.message
