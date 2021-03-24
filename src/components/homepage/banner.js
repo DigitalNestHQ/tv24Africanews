@@ -22,17 +22,18 @@ class Banner extends Component {
     // console.log(feeds)
     
     // METHOD 2
-    const getPremiumNews = feeds && feeds.filter((feed)=>feed.post_type=='premium')
+    const getPremiumNews = feeds && feeds.filter((feed)=>feed.post_type=='premium') // extract premium news
     const firstFeed = Array.isArray(getPremiumNews) && getPremiumNews.length ? getPremiumNews[0] : {};
     const secondFeed = Array.isArray(getPremiumNews) && getPremiumNews.length ? getPremiumNews[1] : {};
-    if(!feeds || !firstFeed || !secondFeed){
+
+    if(feeds.length == 0){// if there is no feeds display loader
       return(
         <div className="container-fluid flex-container banner">
-          <div className="col-sm-8 py-3 carousel-ct">
+          <div className="col-sm-12 py-3 carousel-ct">
             <div className="mt-3 carosel" style={{ fontSize: 20, lineHeight: 2 }}>
               <SkeletonTheme color="#EEE" highlightColor="#CCC">
                   <p>
-                  <Skeleton count={10} duration={4} />
+                  <Skeleton count={10} duration={7} />
                   </p>
               </SkeletonTheme>
             </div>
