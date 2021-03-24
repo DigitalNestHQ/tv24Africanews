@@ -1,6 +1,8 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+
 
 const PoliticsCard = ({
   post_title,
@@ -11,6 +13,7 @@ const PoliticsCard = ({
   category_id,
 }) => {
   // console.log(category_id);
+
   return (
     <div className="card sec-2 col-lg-3 col-sm-6 col-6 my-2 mx-auto" style={{
       margin: '10px 0px',
@@ -20,7 +23,7 @@ const PoliticsCard = ({
         post_type == "premium" && <span className="premium_category_indicator">{ post_type }</span>
       } 
       <img className='responsive-img img-fluid' src={`https://api.tv24africa.com/public/storage/post_image/${featured_image}` }></img>
-      <Link to={`/post/${slug}`}>
+      <Link to={`/post/${slug}`} className="news-link">
           <p>{post_title.toLowerCase()}</p>
       </Link>
     </div>
