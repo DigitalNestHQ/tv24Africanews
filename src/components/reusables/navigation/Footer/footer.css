@@ -102,4 +102,10 @@ footer p{
   font-size: 18px;
   line-height: 22px;
 }
+@media screen and (max-width: 772px){
+  .ft-mob{
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
 

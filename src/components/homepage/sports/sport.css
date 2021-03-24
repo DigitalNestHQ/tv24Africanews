@@ -23,6 +23,7 @@
     background-color: #fff;
     box-shadow: 0;
     border: 0;
+    border-radius: 0 !important;
 }
 .sprt-txt{
     padding-left: 0!important;
@@ -32,16 +33,16 @@
     text-decoration: none;
     transition: transform 2s ease;
     height: 100%;
-    width: 292px;
     max-width: 100%;
     color: #050505;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
 }
 .sprt-crd-img{
-    width: 292px;
+    width: 100%;
     height: 277px;  
 }
 .sport-sec a:hover{

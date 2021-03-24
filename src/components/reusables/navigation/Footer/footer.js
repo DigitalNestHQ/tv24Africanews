@@ -1,5 +1,4 @@
 import React from "react";
-// import { pageurl } from "../../../utils/constants";
 import { Card } from "react-bootstrap";
 import GooglePlayImg from "../../../../assets/images/playstoreimg.png";
 import ApplePlayImg from "../../../../assets/images/apple.jpg";
@@ -9,8 +8,8 @@ const Footer = () => {
   return (
     <div className="footer-wrapper container-fluid">
       <footer className="footer">
-        <div className="row">
-          <div className="col-sm-3">
+        <div className="row ft-mob">
+          <div className="col-sm-3 ">
             <h3 className="ft-hd-1">About</h3>
             <p>
               TV24 Africa Newspaper is Africa’s top online publication

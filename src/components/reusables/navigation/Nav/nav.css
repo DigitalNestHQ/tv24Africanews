@@ -18,12 +18,13 @@
    background:rgba(242, 235, 233, 0.6);
    transition: all 0.5s;
    width: 100%;
-   height: 102px;
+   height: 90px;
  }
  .Navigation header .h-btn{
    background: #e7332b;
    border-radius: 0;
  }
+ 
  .logo{
      width: 78px;
      height: 78px;
@@ -102,7 +103,7 @@
 }
 .nav-mn li{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 21px;
     font-family: 'Roboto' sans-serif;
 }
@@ -139,4 +140,25 @@
   to {
     transform: rotate(-360deg);
   }
+}
+@media (max-width: 978px) {
+    .container, .container-fluid {
+      padding:0;
+      margin:0;
+    }
+    body {
+      padding:0;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom:0;
+    }
+    .navigation{
+        background: #000;
+    }
+    .nav-mn li{
+        padding-left: 10px;
+    }
 }

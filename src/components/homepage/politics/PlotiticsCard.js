@@ -1,28 +1,23 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
-const politicsCard = ({ post_title, featured_image, id, post_type, slug }) => {
+const PoliticsCard = ({
+  post_title,
+  featured_image,
+  id,
+  post_type,
+  slug,
+  category_id,
+}) => {
+  // console.log(category_id);
   return (
-    <div className="col-sm-3 news-sec my-2">
-      <a href={`/post/${slug}`}>
-        <Card className="news-crd">
-          { post_type  === "premium" ? (
-            <span>{post_type}</span>
-          ) : (
-            null
-          )}
-
-          <Card.Img
-            variant="top"
-            src={`https://api.tv24africa.com/public/storage/post_image/${featured_image}`}
-            className="news-card-img"
-          />
-          <Card.Body>
-            <Card.Text className="news-card-caption">{post_title}</Card.Text>
-          </Card.Body>
-        </Card>
-      </a>
+    <div className="card sec-2 col-lg-3 col-sm-12 my-2 mx-auto">
+      <img src={`https://api.tv24africa.com/public/storage/post_image/${featured_image}`}></img>
+      <Link to={`/post/:${slug}`}>
+          <p>{post_title.toLowerCase()}</p>
+      </Link>
     </div>
   );
 };
-export default politicsCard;
+export default PoliticsCard;

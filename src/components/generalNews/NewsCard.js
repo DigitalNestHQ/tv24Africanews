@@ -1,5 +1,4 @@
 import { Card } from "react-bootstrap";
-// import '../sport/sport.css';
 const SportCard = ({ post_description, post_type, post_title, featured_image, id }) => {
   return (
     <div className="">
