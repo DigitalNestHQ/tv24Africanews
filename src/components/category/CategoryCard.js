@@ -19,10 +19,11 @@ const CategoryCard = ({ post_title, featured_image, id, post_type, slug }) => {
           {" "}
           {post_title.toLowerCase().slice(0, 100)}{" "}
         </h3>
+        <br />
         <Link to={`/post/${slug}`}>
           <p className="card-caption-content">
             {" "}
-            {slug.toLowerCase()} <span>Read more...</span>
+            {slug.toLowerCase()} <br /> <span>Read more...</span>
           </p>
         </Link>
       </div>
