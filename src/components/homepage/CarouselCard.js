@@ -1,5 +1,6 @@
 import React from 'react';
 import {Carousel } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 import "./homepage.css";
 
 const CarouselCard = ({ post_title, featured_image, id, post_type, slug }) => {
@@ -7,12 +8,12 @@ const CarouselCard = ({ post_title, featured_image, id, post_type, slug }) => {
         <Carousel.Item className="caro-item">
             <img className="d-block w-100" src={`https://api.tv24africa.com/public/storage/post_image/${featured_image}`} alt="First slide" />
             <Carousel.Caption className="caro-capxn">
-              <a
-                href={`/post/${slug}`}
+              <Link
+                to={`/post/${slug}`}
                 className="text-decoration-none inline-block p-2 text-left cap-ancor"
               >
                 {post_title}
-              </a>
+              </Link>
               <p className="text-white text-left car-p">
                {slug}
               </p>

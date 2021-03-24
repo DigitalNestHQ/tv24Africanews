@@ -13,7 +13,7 @@
   margin: 0;
 }
 .logo-container > img {
-  width: 73px;
+  width: 73px
 }
 
 .discover_nav {
@@ -26,6 +26,8 @@
   flex-wrap: wrap;
   margin-top: 10px;
 }
+
+
 
 .discover .discover_header {
   display: flex;
@@ -60,7 +62,7 @@
 
 .africa-auth {
   text-align: right;
-  padding: 40px;
+  /* padding: 40px; */
 }
 
 .africa-auth > a {
