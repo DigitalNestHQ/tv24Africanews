@@ -15,15 +15,15 @@ button{
     height: 100%;
 } */
 .cnt-1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
         url("../../assets/images/endsars.jpg")top/cover fixed no-repeat;
-    color: #fff;
+    color: #fff; */
 }
 
 .cnt-2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
         url("../../assets/images/Mambilla-Plateau.jpg")top/cover fixed no-repeat;
-    color: #fff;
+    color: #fff; */
 }
 .car-p {
     font-size: 14px;

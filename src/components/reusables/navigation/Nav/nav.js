@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import {
   Link,
 } from "react-router-dom";
 import logo from "../../../../assets/images/TV24Ergb.png";
 import { pageurl } from "../../../../utils/constants";
-import TopNav from "../../topnav";
+import TopNav from "../../Topnav";
 import "./nav.css";
 import "../../header.css";
+import authContext from "../../../../context/auth/authContext";
 
 const Navbar = () => {
+  const userContext = useContext(authContext)
+  const { isAuthenticated } = userContext;
   return (
     <div className="Navigation">
       <TopNav />
@@ -59,16 +62,24 @@ const Navbar = () => {
                   <Link
                     className="nav-link ml-lg-3"
                     activeclassname="activeLink"
-                    to={pageurl.GOVERNANCE}
+                    // to={pageurl.GOVERNANCE}
+                    to={{
+                      pathname: "/news/categories",
+                      search: `?category=Politics`,
+                    }}
                   >
-                    POLITICS/GOVERNAANCE
+                    POLITICS/GOVERNANCE
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link
                     className="nav-link ml-lg-3"
                     activeclassname="activeLink"
-                    to={pageurl.BUSINESS}
+                    // to={pageurl.BUSINESS}
+                     to={{
+                      pathname: "/news/categories",
+                      search: `?category=Business News`,
+                    }}
                   >
                     BUSINESS
                   </Link>
@@ -77,7 +88,11 @@ const Navbar = () => {
                   <Link
                     className="nav-link ml-lg-3"
                     activeclassname="activeLink"
-                    to={pageurl.ENTERTAINMENT}
+                    // to={pageurl.ENTERTAINMENT}
+                     to={{
+                      pathname: "/news/categories",
+                      search: `?category=Entertainment`,
+                    }}
                   >
                     ENTERTAINMENT
                   </Link>
@@ -86,7 +101,11 @@ const Navbar = () => {
                   <Link
                     className="nav-link ml-lg-3"
                     activeclassname="activeLink"
-                    to={pageurl.LIFESTYLE}
+                    // to={pageurl.LIFESTYLE}
+                     to={{
+                      pathname: "/news/categories",
+                      search: `?category=Lifestyle`,
+                    }}
                   >
                     LIFESTYLE
                   </Link>
@@ -94,19 +113,31 @@ const Navbar = () => {
               </ul>
               <ul className="navbar-nav ml-auto mt-2 mt-lg-0 nav-sub-i">
                 <li className="nav-item hd-bd">
-                  <Link
-                    // path={withRouter(pageurl.SIGNIN)}
-                    to="/login"
-                    className="nav-link mt-3 mt-lg-0 px-4 text-white nav-sub-tp"
-                  >
-                    <i className="fas fa-sign-in-alt"></i>
-                    SIGN IN
-                  </Link>
+                  {
+                    isAuthenticated ?
+                    <Link
+                      // path={withRouter(pageurl.SIGNIN)}
+                      to="/login"
+                      className="nav-link mt-3 mt-lg-0 px-4 text-white nav-sub-tp"
+                    >
+                      <i className="fas fa-sign-in-alt"></i>
+                      LOGOUT
+                    </Link>
+                    :
+                    <Link
+                      // path={withRouter(pageurl.SIGNIN)}
+                      to="/login"
+                      className="nav-link mt-3 mt-lg-0 px-4 text-white nav-sub-tp"
+                    >
+                      <i className="fas fa-sign-in-alt"></i>
+                      SIGN IN
+                    </Link>
+                  }
                 </li>
                 <li className="nav-item hd-bd">
                   <Link
                     to="/subscribe"
-                    className="nav-link nav-sub mt-3 mt-lg-0"
+                    className="nav-link nav-sub mt-3 mt-lg-0 subscribe-custom-btn"
                   >
                     subscribe
                   </Link>

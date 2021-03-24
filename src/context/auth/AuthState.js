@@ -29,7 +29,7 @@ const AuthState = props => {
     const register = async formData => {
         const config ={
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
             }
         }
         try {
@@ -61,6 +61,8 @@ const AuthState = props => {
                 payload: res.data
             })
             console.log(res.data);
+            console.log(state)
+            return res
          } catch (error) {
             dispatch({
                 type: LOGIN_FAIL,
@@ -69,17 +71,28 @@ const AuthState = props => {
         }
     }
     // load user 
-    const loadUser = async () => {
+    const loadUser = async () => { // endpoint not found
+        console.log('called!!!')
         if(localStorage.token){
             setAuthToken(localStorage.token)
         }   
+        const token = localStorage.getItem("token");
+        const config = {
+            headers: {
+                "Authorization" : `Bearer ${token}`, 
+                'Content-Type': 'application/json',
+              }
+        }
+
         try {
-            const res = await axios.get('http://api.tv24africa.com/api/v1/');
+            const res = await axios.get('http://api.tv24africa.com/api/v1/user', config);
+            console.log('loaduser', res)
             dispatch({
                 type: USER_LOADED,
                 payload: res.data,
             })
         } catch (err) {
+            console.log("err from loaduser", err) // throwing error 404
             dispatch({
                 type: AUTH_ERROR,
                 payload: err.message

@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const PoliticsCard = ({
@@ -19,8 +19,8 @@ const PoliticsCard = ({
             {// only show the post type for premium
         post_type == "premium" && <span className="premium_category_indicator">{ post_type }</span>
       } 
-      <img src={`https://api.tv24africa.com/public/storage/post_image/${featured_image}`}></img>
-      <Link to={`/post/:${slug}`}>
+      <img className='responsive-img img-fluid' src={`https://api.tv24africa.com/public/storage/post_image/${featured_image}` }></img>
+      <Link to={`/post/${slug}`}>
           <p>{post_title.toLowerCase()}</p>
       </Link>
     </div>

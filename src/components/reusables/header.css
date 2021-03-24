@@ -46,6 +46,18 @@
     margin-top: 5px!important;
     font-weight: 400!important;
 }
+
+/* Style the navbar dropdown */
+@media(max-width: 1000px){
+    .nav-sub{
+        padding: 12px !important;
+        margin: 12px;
+        border-radius: 5px;
+    }
+    .nav-sub-tp{
+        padding: 12px !important;
+    }
+}
 .nav-sub-tp{
     font-weight: 400!important;
 }
