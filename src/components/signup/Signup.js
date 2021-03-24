@@ -67,7 +67,7 @@ const Signup = (props) => {
   return (
     <div className="signup">
       <div className="page-wrap">
-        <FormHeader />
+        <FormHeader redirectTo="login" linkLabel="Login"/>
         <div className="container-fluid signup-wrap">
           <div className="signup-txt">
             <p>The original African story every day in your inbox</p>
@@ -76,7 +76,7 @@ const Signup = (props) => {
             </span>
           </div>
           <div className="form-wrap">
-            <h2>Sign Up</h2>
+            <h2>Create an account</h2>
             <Alerts />
             <form className="form signup-form" onSubmit={onSubmit}>
               <div className="row mb-3">
@@ -86,7 +86,7 @@ const Signup = (props) => {
                   </label>
                   <input
                     type="text"
-                    className="form-control"
+                    className="form-control mb-3"
                     placeholder="First name"
                     name="firstname"
                     value={firstname}

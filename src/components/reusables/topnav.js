@@ -5,7 +5,13 @@ import "./header.css";
 function TopNav(props) {
   const userContext = useContext(authContext)
   const { user } = userContext;
-  console.log(user)
+  // console.log(user)
+
+  // const authContext = useContext(AuthContext);
+
+  // useEffect(() => {
+  //   // eslint-disable-next-line
+  // }, []);
 
   const getDate = () => {
     const date = new Date();
@@ -55,9 +61,20 @@ function TopNav(props) {
       <p className="text-white name-sp" style={{ marginBottom: "0px" }}>
         {" "}
         {
-          user && <><span>Welcome {user.firstname} {user.lastname}</span> <span>{getDate()}</span></>
+          user && user ? (
+            <>
+              <span>Welcome {user.firstname} {user.lastname}</span> <span>{getDate()}</span>
+            </>
+          ) :(
+              <span>Welcome </span>
+          )
         }
         {" "}
+      </p>
+      {/* <button onClick={()=>userContext.loadUser()}>Load User</button> */}
+      {/* the weather repost component goes here */}
+      <p className="text-white name-sp">
+        <span>Weather:  Sunny : 23 <sup>degree</sup></span>
       </p>
       <ul className="soc-nav" style={{ marginBottom: "0px" }}>
         <li>

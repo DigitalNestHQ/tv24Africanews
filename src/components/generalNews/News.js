@@ -59,12 +59,13 @@ const GetNews = () => {
       const getThisNews = () => {
         try {
           getSingleNews(slug).then((res) => {
-            setNews(res[0]);
+            // only set news when there is a response, using if keeps infinite loader
+            res && setNews(res[0]);
             setLoading(false);
+
           })
           getNewsComments(slug).then((res) => {
-            console.log('comments', res.data)
-            setComments(res.data)
+            res && setComments(res.data)
           })
         } catch (error) {
           if (error) {

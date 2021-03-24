@@ -5,9 +5,9 @@ import { postNewComment } from '../../context/news/NewsApi'
 
 const CommentForm = (props) => {
   const userContext = useContext(authContext);
-  const { isAuthenticated } = userContext;
+  const { isAuthenticated, user } = userContext;
   const [newComment, setNewComment] = useState({
-    name: '',
+    name: isAuthenticated ? user.firstname + " " +user.lastname : "sam",
     comment: '',
     post_id: props.post_id,
     post_title: props.post_title,
@@ -15,10 +15,12 @@ const CommentForm = (props) => {
 
   const handleChange = (e) => setNewComment({ ...newComment, [e.target.name]: e.target.value });
   const handleSubmit = (e) => {
+    console.log(newComment)
     e.preventDefault()
     postNewComment(newComment)
-    console.log(newComment)
   }
+
+  console.log(user)
 
   return (
     <form className="comment-form" onSubmit={handleSubmit}>
@@ -26,7 +28,7 @@ const CommentForm = (props) => {
         !isAuthenticated && (
           <>
             <label htmlFor="name">Name</label>
-            <input type="text" name="name" minLength="2" onChange={handleChange} required/>
+            <input type="text" name="name" minLength="2" onChange={handleChange} className="form-control" required/>
             {/* Email not included in the endpoint params */}
             {/* <label htmlFor="email">Email</label>
             <input type="email" name="email" onChange={handleChange}/> */}
@@ -41,6 +43,8 @@ const CommentForm = (props) => {
         rows="4"
         placeholder="Write comment"
         onChange={handleChange}
+        required
+        className="form-control"
         ></textarea>
         <input type="submit" value="Add Comment" className="btn-submit" />
     </form>

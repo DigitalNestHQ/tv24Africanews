@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./homepage.css";
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+
 
 class Banner extends Component {
   render() {
@@ -20,9 +22,24 @@ class Banner extends Component {
     // console.log(feeds)
     
     // METHOD 2
-    const getPremiumNews = feeds.filter((feed)=>feed.post_type=='premium')
+    const getPremiumNews = feeds && feeds.filter((feed)=>feed.post_type=='premium')
     const firstFeed = Array.isArray(getPremiumNews) && getPremiumNews.length ? getPremiumNews[0] : {};
     const secondFeed = Array.isArray(getPremiumNews) && getPremiumNews.length ? getPremiumNews[1] : {};
+    if(!feeds || !firstFeed || !secondFeed){
+      return(
+        <div className="container-fluid flex-container banner">
+          <div className="col-sm-8 py-3 carousel-ct">
+            <div className="mt-3 carosel" style={{ fontSize: 20, lineHeight: 2 }}>
+              <SkeletonTheme color="#EEE" highlightColor="#CCC">
+                  <p>
+                  <Skeleton count={10} duration={4} />
+                  </p>
+              </SkeletonTheme>
+            </div>
+          </div>
+        </div>
+      )
+    }
 
     return (
       <div className="container-fluid flex-container banner">
@@ -69,7 +86,7 @@ class Banner extends Component {
                 backgroundImage:`url(https://api.tv24africa.com/public/storage/post_image/${firstFeed.featured_image})`,
                 background: 'rgba(0,0,0,0.8)',
                 backgroundPosition: 'center',
-                height: '100%'
+                // height: '100%'
                 // background: `
                 // linear-gradient(rgba(0, 0, 0, 0.5), 
                 // rgba(0, 0, 0, 0.6)),

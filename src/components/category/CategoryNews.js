@@ -12,6 +12,7 @@ import { Link, useLocation } from "react-router-dom";
 import Loader from "../loader/Loader";
 import "./newscategory.css";
 import { Button, Card } from "react-bootstrap";
+import UnableToFetchNews from "../reusables/errorMessages/UnableToFetchNews";
 
 const CategoryNews = () => {
   const [loading, setLoading] = useState(true);
@@ -70,44 +71,51 @@ const CategoryNews = () => {
       <Header post_type={newsCateg && newsCateg[0].category_id}/>
       {/* {<h1 className="text-center text-title">{newsCateg && newsCateg[0].category_id}</h1>} */}
       {/* <h1 className="text-center text-title">Welcome Here</h1> */}
-      <div className="discover-cont">
-        <section className="discover">
-          <div className="left-pane">
-            {newsCateg && newsCateg.length > 0 &&
-              newsCateg.map((aNews) => {
-                const {
-                  post_title,
-                  featured_image,
-                  id,
-                  post_type,
-                  slug,
-                  category_id,
-                } = aNews;
-                return (
-                  <CategoryCard
-                    key={id}
-                    post_title={post_title}
-                    featured_image={featured_image}
-                    slug={slug}
-                    category_id={category_id}
-                    post_type={post_type}
-                    className="card-unit"
-                    />
-                );
-              })}
-          </div>
-          <div className="right-pane">
-            <h4 className="trend">TRENDS</h4>
-            <ul>
-              {news && news.length > 0 && news.slice(0, 10).map((news) => (
-                <li className="trend_list">
-                  <Link to={`/post/${news.slug}`}>{news.slug}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
+      {
+        newsCateg && newsCateg ?
+        <div className="discover-cont">
+          <section className="discover">
+            <div className="left-pane">
+              {newsCateg && newsCateg.length > 0 &&
+                newsCateg.map((aNews) => {
+                  const {
+                    post_title,
+                    featured_image,
+                    id,
+                    post_type,
+                    slug,
+                    category_id,
+                  } = aNews;
+                  return (
+                    <CategoryCard
+                      key={id}
+                      post_title={post_title}
+                      featured_image={featured_image}
+                      slug={slug}
+                      category_id={category_id}
+                      post_type={post_type}
+                      className="card-unit"
+                      />
+                  );
+                })}
+            </div>
+            <div className="right-pane">
+              <h4 className="trend">TRENDS</h4>
+              <ul>
+                {news && news.length > 0 && news.slice(0, 10).map((news) => (
+                  <li className="trend_list">
+                    <Link to={`/post/${news.slug}`}>{news.slug}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
         </div>
+        :
+        <div>
+          <UnableToFetchNews />
+        </div>
+      }
       <Footer/>
     </Fragment>
   );

@@ -53,6 +53,7 @@
 .nav-links.discover {
   color: white;
   text-decoration: none;
+  font-weight: bold;
   padding: 10px 20px;
 }
 
